@@ -1,9 +1,10 @@
 import './App.css';
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div>
-      <h1>QQCOISA!!!Game Box by Lili</h1>
+      <Home />
     </div>
   );
 }
