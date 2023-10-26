@@ -99,7 +99,10 @@ p {
   .home_avatar {
     display: flex;
     position: absolute;
-    display: none;
+    width: 9vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 30.8vw;
+    left: 5vw;
   }
 
   .home_trofeu {
