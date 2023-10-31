@@ -10,6 +10,7 @@ import arvoreBolas from "../Images/GBL-arvore-bolas.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import terra from "../Images/GBL-terra.webp";
 import trofeu from "../Images/GBL-trofeu.webp";
+import coelho from "../Images/GBL-coelho.webp";
 
 function Home() {
   return (
@@ -38,6 +39,11 @@ function Home() {
       alt="árvore de bolas de pixel"
       className={style.home_arvoreBolas}
         />
+                <img
+      src={coelho}
+      alt="árvore de bolas de pixel"
+      className={style.home_coelho}
+        />
       </div>
       <div className={style.home_titulo_box}>
         <img
@@ -65,11 +71,11 @@ function Home() {
         alt="árvore de bolas de pixel"
         className={style.home_arvore}
       />*/}
-      {/*<img
+      <img
         src={nuvemTriangulo}
         alt="nuvem em forma de triângulo de pixel"
         className={style.home_nuvem}
-      />*/}
+      />
 
       <Background page="home" />
     </div>

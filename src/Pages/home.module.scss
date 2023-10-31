@@ -84,6 +84,16 @@ p {
     width: 15vw;
   }
 
+  .home_coelho {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 15vw;
+    right: 4vw;
+    bottom: 0;
+    width: 5vw;
+  }
+
   .home_moeda {
     display: flex;
     width: 2vw;
@@ -96,6 +106,15 @@ p {
     top: 60vw;
     right: 10vw;
     width: 9vw;
+  }
+
+  .home_coelho {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 38.5vw;
+    right: 15vw;
+    width: 3vw;
   }
 
   .home_nuvem {
