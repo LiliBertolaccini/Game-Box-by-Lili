@@ -74,6 +74,16 @@ p {
     bottom: 0;
   }
 
+  .home_arvoreBolas {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 27vw;
+    right: 4vw;
+    bottom: 0;
+    width: 15vw;
+  }
+
   .home_moeda {
     display: flex;
     width: 2vw;
@@ -82,13 +92,21 @@ p {
   .home_arvore {
     display: flex;
     position: absolute;
-    display: none;
+    //display: none;
+    top: 60vw;
+    right: 10vw;
+    width: 9vw;
   }
 
   .home_nuvem {
     display: flex;
     position: absolute;
-    display: none;
+    align-items: flex-end;
+    justify-content: end;
+    //display: none;
+    left: 17vw;
+    top: -2vw;
+    width: 9vw;
   }
 
   .home_coracao {
@@ -111,4 +129,5 @@ p {
     margin-bottom: -2vw;
     margin-right: 1vw;
   }
+
 }
