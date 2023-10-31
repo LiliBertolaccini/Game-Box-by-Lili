@@ -4,31 +4,52 @@ import style from './app.module.scss';
 import Home from './Pages/Home';
 import Games from './Pages/Games';
 import arrow from './Images/GBL-seta.webp';
+import GameDetails from './Pages/GameDetails';
+import ProjectDetails from './Pages/ProjectDetails';
+import Final from './Pages/Final';
 
 function App() {
-  const [local, setLocal] = useState('games');
-  let componentPage ;
-  switch (local) {
-    case 'home':
-      componentPage = <Home />;
-      break;
+  const [local, setLocal] = useState('home');
+  const componentPage = () => {
+    switch (local) {
+      case 'home':
+      return <Home />;
     case 'games':
-      componentPage = <Games />;
-      break;
+      return <Games />;
+    case 'gameDetails':
+      return <GameDetails />;
+    case 'projectDetails':
+      return <ProjectDetails />;
+    case 'final':
+      return <Final />;
     default:
-      componentPage = '';
-      break;
+      return null;
   }
+  };
 
-  useEffect(() => {
-
-      
-  }, [local])
+  const handleClick = (() => {
+    switch (local) {
+      case 'home':
+        return setLocal('games');
+      case 'games':
+        return setLocal('gameDetails');
+      case 'gameDetails':
+        return setLocal('projectDetails');
+      case 'projectDetails':
+        return setLocal('home');
+      case 'final':
+        return setLocal('home');
+    default:
+      return null;
+    }
+  });
 
   return (
     <div className={style.app_container}>
-      {componentPage}
-      <Games />
+      <img src={arrow} alt='arrow' className={`${style.app_arrow} ${style.app_arrow_left}`} onClick={handleClick}/>
+
+      { componentPage() }
+      <img src={arrow} alt='arrow' className={style.app_arrow} onClick={handleClick}/>
     </div>
   );
 }

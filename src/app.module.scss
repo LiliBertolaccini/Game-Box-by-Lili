@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   height: 100vh;
+  gap: 1vw;
+
+  .app_arrow {
+    width: 5vw;
+    cursor: pointer;
+  }
 }
+
