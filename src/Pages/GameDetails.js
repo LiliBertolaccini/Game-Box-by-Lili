@@ -6,7 +6,7 @@ import Background from "../Components/Background";
 export default function GameDetails() {
   return (
     <div className={style.gameDetails_container}>
-      <Background page="home" />
+      <Background page="jogo" />
     </div>
   );
 }

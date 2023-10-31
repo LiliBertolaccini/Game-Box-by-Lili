@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import style from './app.module.scss';
 import Home from './Pages/Home';
@@ -36,7 +36,7 @@ function App() {
       case 'gameDetails':
         return setLocal('projectDetails');
       case 'projectDetails':
-        return setLocal('home');
+        return setLocal('final');
       case 'final':
         return setLocal('home');
     default:
