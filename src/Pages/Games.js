@@ -19,14 +19,17 @@ import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
 function Games() {
   return (
     <div className={style.games_container}>
+      {/*<img src={arrow} alt="arrow" className={style.games_arrow}
+      //onClick={handleClick}
+      />*/}
       <div className={style.games_box}>
-        {/*<div className={style.games_nuvemTriangulo}>
-        <img src={nuvemTriangulo}
-        alt="nuvem de pixel"
-        className={style.games_box_nuvemTriangulo}
-        />
+              {/*<div className={style.games_nuvemTriangulo}>
+              <img src={nuvemTriangulo}
+              alt="nuvem de pixel"
+              className={style.games_box_nuvemTriangulo}
+              />
+              </div>*/}
 
-        </div>*/}
       <img
         src={nuvemTriangulo}
         alt="nuvem de pixel"

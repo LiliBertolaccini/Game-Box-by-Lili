@@ -20,6 +20,7 @@ body {
   img {
     z-index: 1;
     width: 200px;
+
   }
 
   .games_box {
@@ -108,4 +109,17 @@ body {
     width: 80vw;
     bottom: -30vw;
   }
+
+  //.games_arrow {
+  //  width: 5vw;
+  //  cursor: pointer;
+  //  transition: transform 0.3s;
+  //  &:hover {
+  //    transform: scale(1.2);
+  //  }
+  //  &:active {
+  //    transform: scale(0.8);
+  //  }
+  //}
+
 }
