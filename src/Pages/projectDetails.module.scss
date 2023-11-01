@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "ArcadeClassic";
+  src: url("../font/ArcadeClassic.ttf");
+}
+
+.projectDetails_container {
+  width: 80vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    z-index: 2;
+    width: 200px;
+  }
+
+  .projectDetails_box {
+    width: 70vw;
+    //position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    .projectDetails_img_box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 20vw;
+        position: absolute;
+        z-index: 1;
+      }
+
+    .projectDetails_img_lili{
+      width: 13vw;
+      z-index: 1;
+      position: absolute;
+      }
+    
+
+    .projectDetails_text_box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .projectDetails_titulo_box {
+        width: 30vw;
+        position: absolute;
+        z-index: 1;
+      }
+      p {
+        font-size: 1.2vw;
+        width: 30vw;
+        z-index: 1;
+        position: absolute;
+      }
+    }
+    }
+
+  }
+
+
+  
+}

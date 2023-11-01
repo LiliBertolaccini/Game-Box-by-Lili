@@ -120,12 +120,21 @@ p {
   .home_nuvem {
     display: flex;
     position: absolute;
-    align-items: flex-end;
-    justify-content: end;
     //display: none;
     left: 17vw;
-    top: -2vw;
+    top: 2vw;
     width: 9vw;
+    z-index: 2;
+  }
+
+  .home_nuvemTriangulo {
+    display: flex;
+    position: absolute;
+    //display: none;
+    left: 20vw;
+    top: 2vw;
+    width: 9vw;
+    z-index: 2;
   }
 
   .home_coracao {

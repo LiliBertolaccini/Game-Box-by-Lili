@@ -25,24 +25,9 @@ function Home() {
           <p>1250</p>
         </div>
         <img
-        src={nuvemTriangulo}
-        alt="nuvem de pixel"
-        className={style.home_nuvemTriangulo}
-        />   
-        <img
           src={coracao}
           alt="vidas de coração de pixel"
           className={style.home_coracao}
-        />
-        <img
-      src={arvoreBolas}
-      alt="árvore de bolas de pixel"
-      className={style.home_arvoreBolas}
-        />
-                <img
-      src={coelho}
-      alt="árvore de bolas de pixel"
-      className={style.home_coelho}
         />
       </div>
       <div className={style.home_titulo_box}>
@@ -56,6 +41,21 @@ function Home() {
           <h2>by Lili</h2>
         </div>
       </div>
+      <img
+      src={arvoreBolas}
+      alt="árvore de bolas de pixel"
+      className={style.home_arvoreBolas}
+        />
+      <img
+      src={coelho}
+      alt="árvore de bolas de pixel"
+      className={style.home_coelho}
+        />
+      <img
+        src={nuvemTriangulo}
+        alt="nuvem de pixel"
+        className={style.home_nuvemTriangulo}
+        />
       <img
       src={avatar}
       alt="avatar de pixel"

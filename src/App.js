@@ -9,7 +9,7 @@ import ProjectDetails from './Pages/ProjectDetails';
 import Final from './Pages/Final';
 
 function App() {
-  const [local, setLocal] = useState('home');
+  const [local, setLocal] = useState('projectDetails');
   const componentPage = () => {
     switch (local) {
       case 'home':
