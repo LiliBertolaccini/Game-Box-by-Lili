@@ -48,7 +48,7 @@ function Home() {
         />
       <img
       src={coelho}
-      alt="árvore de bolas de pixel"
+      alt="coelho de pixel"
       className={style.home_coelho}
         />
       <img

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "ArcadeClassic";
+  src: url("../font/ArcadeClassic.ttf");
+}
+
+.final_container {
+  width: 80vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .final_el_topo_box {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    top: -2vw;
+  }
+
+  .final_el_moeda {
+    display: flex;
+    flex-direction: row;
+    //position: absolute;
+    align-items: center;
+    margin-left: 2vw;
+  }
+
+  .final_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 10vw;
+
+    h2 {
+      font-size: 5vw;
+      font-family: "ArcadeClassic";
+    }
+
+    h3 {
+      font-size: 1.8vw;
+      margin-top: 3vw;
+    }
+
+    .final_button_box {
+      gap: 2vw;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 2vw;
+      justify-content: center;
+
+      a {
+        font-size: 1.4vw;
+        border: 2px solid #fff;
+        width: 10vw;
+        text-align: center;
+        padding: 0.8vw 0;
+        background-image: linear-gradient(to right, #0b58af, #c238d3);
+        text-decoration: none;
+        color: #fff;
+        font-family: "ArcadeClassic";
+        transition: transform 0.3s;
+
+        &:hover {
+          background-image: linear-gradient(to left, #0b58af, #c238d3);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+  .final_moeda {
+    display: flex;
+    width: 2vw;
+  }
+
+  .final_coracao {
+    margin-right: 2vw;
+    width: 9vw;
+  }
+}

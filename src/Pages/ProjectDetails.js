@@ -15,12 +15,20 @@ export default function ProjectDetails() {
             alt="foto da desenvolvedora-lili"
             className={style.projectDetails_img_lili}
           />
-          <img src={caixa} alt="background foto" />
+          <img
+            src={caixa}
+            alt="background foto"
+            className={style.projectDetails_img_background}
+          />
         </div>
         <div className={style.projectDetails_text_box}>
           <div className={style.projectDetails_titulo_box}>
             <h2>Desafios e aventuras de HTML, CSS e JS</h2>
-            <img src={tituloG} alt="background titulo" />
+            <img
+              src={tituloG}
+              alt="background titulo"
+              className={style.projectDetails_titulo_background}
+            />
           </div>
           <p>
             "Em um dia não tão distante, me deparei com a aventura proposta pela{" "}

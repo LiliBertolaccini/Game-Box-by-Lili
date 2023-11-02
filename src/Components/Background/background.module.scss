@@ -1,5 +1,11 @@
 .background_container {
 
+  .background_border {
+    width: 80vw;
+    height: 4px;
+    background-image: linear-gradient(to right, #0B58AF, #C238D3);
+  }
+
   img {
     width: 80vw;
     z-index: 0;

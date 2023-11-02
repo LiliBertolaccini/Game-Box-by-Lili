@@ -24,6 +24,8 @@ function Background({page}) {
 
   return (
     <div className={style.background_container}>
+      <div className={style.background_border}>
+      </div>
       <img src={imgBackground} alt="Background" />
     </div>
   );

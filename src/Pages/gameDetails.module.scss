@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "ArcadeClassic";
+  src: url("../font/ArcadeClassic.ttf");
+}
+
+.gameDetails_container {
+  width: 80vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+
+  .gameDetails_box {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    top: 30%;
+    align-items: center;
+
+    .gameDetails_terra {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      width: 80vw;
+      top: 17vw;
+      z-index: 1;
+    }
+
+    .gameDetails_moeda {
+      display: flex;
+      flex-direction: row;
+      //position: absolute;
+      align-items: center;
+      margin-left: 2vw;
+    }
+
+    .gameDetails_avatar {
+      display: flex;
+      position: absolute;
+      width: 9vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 11vw;
+      left: 12vw;
+    }
+
+    .gameDetails_coelho {
+      display: flex;
+      position: absolute;
+      width: 9vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 11vw;
+      left: -20vw;
+    }
+
+    .gameDetails_florPink {
+      display: flex;
+      position: absolute;
+      width: 6vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 14vw;
+      left: -26vw;
+    }
+
+    .gameDetails_arvoreBola {
+      display: flex;
+      position: absolute;
+      width: 13vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 7vw;
+      left: 30vw;
+    }
+
+    .gameDetails_moeda {
+      display: flex;
+      //flex-direction: row;
+      position: absolute;
+      //align-items: center;
+      top: -19vw;
+      left: 35vw;
+      //margin-left: 25vw;
+      //top: 9vw;
+      width: 3vw;
+
+      //comloquei a moeda e desalinhou todo o resto , foi o ultimo
+    }
+  }
+}

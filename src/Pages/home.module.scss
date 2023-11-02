@@ -9,12 +9,6 @@
   position: relative;
   align-items: center;
   flex-direction: column;
-  
-
-  img {
-    z-index: 1;
-    width: 200px;
-  }
 
   h1 {
     z-index: 1;
@@ -29,10 +23,10 @@
     margin-top: -1vw;
   }
 
-p {
-  font-size: 1.5vw;
-  margin-left: 1vw;
-}
+  p {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
 
   .home_el_topo_box {
     display: flex;
@@ -44,28 +38,28 @@ p {
     top: -2vw;
   }
 
-.home_titulo_box {
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  justify-content: center;
-  top: 30%;
-  align-items: center;
-}
+  .home_titulo_box {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    top: 30%;
+    align-items: center;
+  }
 
-.home_el_moeda {
-  display: flex;
-  flex-direction: row;
-  //position: absolute;
-  align-items: center;
-  margin-left: 2vw;
-}
+  .home_el_moeda {
+    display: flex;
+    flex-direction: row;
+    //position: absolute;
+    align-items: center;
+    margin-left: 2vw;
+  }
 
-.home_titulo {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
+  .home_titulo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
 
   .home_terra {
     display: flex;
@@ -157,5 +151,4 @@ p {
     margin-bottom: -2vw;
     margin-right: 1vw;
   }
-
 }
