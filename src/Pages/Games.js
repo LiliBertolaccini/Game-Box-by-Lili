@@ -8,7 +8,7 @@ import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
 import avatar from "../Images/GBL-avatar.webp";
 import cogumelo from "../Images/GBL-Cogumelo.webp";
 //import coelho from "../Images/GBL-coelho.webp";
-import trofeu from "../Images/GBL-trofeu.webp";
+//import trofeu from "../Images/GBL-trofeu.webp";
 import terra from "../Images/GBL-terra.webp";
 import dog from "../Images/GBL-dog.webp";
 import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
@@ -35,11 +35,11 @@ function Games() {
         className={style.games_nuvemTriangulo}
       />
 
-      <img
+      {/*<img
         src={nuvemTriangulo}
         alt="nuvem de pixel"
         className={style.games_nuvemTriangulo2}
-      />
+      />*/}
 
       <img
       src={nuvemCumprida}
@@ -53,11 +53,11 @@ function Games() {
       className={style.games_avatar}
       />
 
-      <img
+      {/*<img
       src={trofeu}
       alt="trofeu de pixel"
       className={style.games_trofeu}
-      />
+      />*/}
 
       <img
       src={dog}

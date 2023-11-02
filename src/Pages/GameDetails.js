@@ -3,7 +3,6 @@ import style from "./gameDetails.module.scss";
 
 import Background from "../Components/Background";
 
-import arrow from '../Images/GBL-seta.webp';
 import avatar from "../Images/GBL-avatar.webp";
 import terra from "../Images/GBL-terra.webp";
 //import florRosa from "../Images/GBL-florRosa.webp";

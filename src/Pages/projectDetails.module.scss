@@ -82,4 +82,48 @@
       }
     }
   }
-}
+
+  .projectDetails_terra {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 81vw;
+    top: 37.2vw;
+    z-index: 1;
+    //left: -0.99vw;
+    right: -1vw;
+    //bottom: -45.5vw;
+  }
+
+  .projectDetails_avatar {
+    display: flex;
+    position: absolute;
+    width: 9vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 31.2vw;
+    left: 62.2vw;
+  }
+
+    .projectDetails_florRosa {
+      display: flex;
+      position: absolute;
+      width: 4vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 36vw;
+      left: 5vw;
+    }
+
+    .projectDetails_montanha {
+      display: flex;
+      position: absolute;
+      width: 9vw;
+      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+      top: 33vw;
+      left: 70vw;
+    }
+
+  }
+
+
+

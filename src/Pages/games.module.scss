@@ -25,26 +25,26 @@
   .games_nuvemTriangulo{
     display: flex;
     position: absolute;
-    left: 60vw;
+    left: 66vw;
     top: -1vw;
     width: 11vw;
     z-index: 2;
   }
-  .games_nuvemTriangulo2 {
-    display: flex;
-    position: absolute;
-    left: 68.5vw;
-    top: 2vw;
-    width: 11vw;
-    z-index: 2;
-  }
+  //.games_nuvemTriangulo2 {
+  //  display: flex;
+  //  position: absolute;
+  //  left: 68.5vw;
+  //  top: 2vw;
+  //  width: 11vw;
+  //  z-index: 2;
+  //}
 
 
 .games_nuvemCumprida {
     display: flex;
     position: absolute;
     left: 1vw;
-    top: -4.5vw;
+    top: -4vw;
     width: 22vw;
     z-index: 2;
 }
@@ -57,21 +57,21 @@
     left: 25vw;
   }
 
-.games_trofeu {
-  display: flex;
-  position: absolute;
-  width: 5vw;
-  top: -20vw;
-  //left: 20vw;
-  right: 7vw;
+//.games_trofeu {
+//  display: flex;
+//  position: absolute;
+//  width: 5vw;
+//  top: -20vw;
+//  //left: 20vw;
+//  right: 7vw;
 
-  //display: flex;
-  //position: absolute;
-  //flex-direction: row;
-  //justify-content: center;
-  //top: 15%;
-  //align-items: center;
-}
+//  //display: flex;
+//  //position: absolute;
+//  //flex-direction: row;
+//  //justify-content: center;
+//  //top: 15%;
+//  //align-items: center;
+//}
 
   .games_dog {
     display: flex;

@@ -4,6 +4,13 @@ import Background from "../Components/Background";
 import caixa from "../Images/GBL-elemento-caixa.webp";
 import profileImg from "../Images/GBL-profile_lili.jpeg";
 import tituloG from "../Images/GBL-elemento-titulo-grande.webp";
+import avatar from "../Images/GBL-avatar.webp";
+import terra from "../Images/GBL-terra.webp";
+import florRosa from "../Images/GBL-florRosa.webp";
+import montanha from '../Images/GBL-montanha.webp';
+
+
+
 
 export default function ProjectDetails() {
   return (
@@ -20,6 +27,8 @@ export default function ProjectDetails() {
             alt="background foto"
             className={style.projectDetails_img_background}
           />
+
+          
         </div>
         <div className={style.projectDetails_text_box}>
           <div className={style.projectDetails_titulo_box}>
@@ -49,7 +58,33 @@ export default function ProjectDetails() {
             até aqui)"
           </p>
         </div>
+
       </div>
+
+      <img
+      src={avatar}
+      alt="avatar de pixel"
+      className={style.projectDetails_avatar}
+        />
+
+      <img
+      src={terra}
+      alt="chão de pixel"
+      className={style.projectDetails_terra}
+        />
+
+      <img
+      src={florRosa}
+      alt="flor rosa de pixel"
+      className={style.projectDetails_florRosa}
+        />
+
+      <img
+      src={montanha}
+      alt="flor rosa de pixel"
+      className={style.projectDetails_montanha}
+        />
+
       {/*importar aqui as imgs!*/}
       <Background page="jogo" />
     </section>
