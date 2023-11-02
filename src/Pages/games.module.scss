@@ -11,6 +11,10 @@
   align-items: center;
   flex-direction: column;
 
+  p {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
 
   .games_box {
     display: flex;
@@ -20,8 +24,31 @@
     width: 80vw;
     align-items: center;
     top: 0;
+
+//abaixo o do home
+    //display: flex;
+    //position: absolute;
+    //justify-content: space-between;
+    //flex-direction: row;
+    //width: 80vw;
+    //align-items: center;
+    //top: -2vw;
   }
 
+//.games_el_moeda {
+//  display: flex;
+//  flex-direction: row;
+//  //position: absolute;
+//  align-items: center;
+//  margin-left: 2vw;
+//  width: 2vw;
+//}
+
+//.games_el_coracao {
+//  margin-right: 2vw;
+//  width: 9vw;
+//}
+  
   .games_nuvemTriangulo{
     display: flex;
     position: absolute;
