@@ -5,9 +5,8 @@ import Background from "../Components/Background";
 
 import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
-import arrow from '../Images/GBL-seta.webp';
 import avatar from "../Images/GBL-avatar.webp";
-import cogumelo from "../Images/GBL-cogumelo.webp";
+import cogumelo from "../Images/GBL-Cogumelo.webp";
 //import coelho from "../Images/GBL-coelho.webp";
 import trofeu from "../Images/GBL-trofeu.webp";
 import terra from "../Images/GBL-terra.webp";
@@ -34,6 +33,12 @@ function Games() {
         src={nuvemTriangulo}
         alt="nuvem de pixel"
         className={style.games_nuvemTriangulo}
+      />
+
+      <img
+        src={nuvemTriangulo}
+        alt="nuvem de pixel"
+        className={style.games_nuvemTriangulo2}
       />
 
       <img

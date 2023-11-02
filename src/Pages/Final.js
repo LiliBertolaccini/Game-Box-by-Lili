@@ -9,7 +9,7 @@ import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
 import florRosa from "../Images/GBL-florRosa.webp";
 import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
-import cogumelo from "../Images/GBL-cogumelo.webp";
+import cogumelo from "../Images/GBL-Cogumelo.webp";
 import coelho from "../Images/GBL-coelho.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";

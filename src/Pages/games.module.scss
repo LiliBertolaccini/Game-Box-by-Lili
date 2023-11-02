@@ -22,23 +22,30 @@
     top: 0;
   }
 
-  .games_nuvemTriangulo {
+  .games_nuvemTriangulo{
     display: flex;
     position: absolute;
-    left: 55vw;
-    top: -17vw;
+    left: 60vw;
+    top: -1vw;
     width: 11vw;
     z-index: 2;
-
+  }
+  .games_nuvemTriangulo2 {
+    display: flex;
+    position: absolute;
+    left: 68.5vw;
+    top: 2vw;
+    width: 11vw;
+    z-index: 2;
   }
 
 
 .games_nuvemCumprida {
     display: flex;
     position: absolute;
-    left: 5vw;
-    top: -22vw;
-    width: 24vw;
+    left: 1vw;
+    top: -4.5vw;
+    width: 22vw;
     z-index: 2;
 }
 
@@ -46,7 +53,7 @@
     display: flex;
     position: absolute;
     width: 9vw;
-    top: 16vw;
+    top: 31.2vw;
     left: 25vw;
   }
 
@@ -69,8 +76,8 @@
   .games_dog {
     display: flex;
     position: absolute;
-    top: 21vw;
-    right: 10vw;
+    top: 36vw;
+    right: 17vw;
     width: 4vw;
   }
 
@@ -78,8 +85,9 @@
   display: flex;
   position: absolute;
   //display: none;
-  top: 22vw;
-  right: 69vw;
+  top: 37vw;
+  //right: 69vw;
+  left: 5vw;
   bottom: 0;
   width: 3vw;
 }
@@ -87,16 +95,17 @@
   .games_arvoreCheia {
     display: flex;
     position: absolute;
-    top: 10vw;
-    right: 10vw;
-    width: 15vw;
+    top: 25vw;
+    right: 4vw;
+    width: 16vw;
   }
 
   .games_terra {
     display: flex;
     position: absolute;
     width: 80vw;
-    bottom: -30vw;
+    //bottom: 0;
+    bottom: -45.43vw;
   }
 
   //.games_arrow {
