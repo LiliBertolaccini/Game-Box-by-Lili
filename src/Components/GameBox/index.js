@@ -6,13 +6,14 @@ import caixa from "../../Images/GBL-elemento-caixa.webp";
 import memoria from "../../Images/GBL-estrela.webp";
 import piano from "../../Images/GBL-teclado.webp";
 import yugi from "../../Images/GBL-yugi.webp";
+import ralph from "../../Images/GBL-ralph.webp";
 
 export default function GameBox({ nomeJogo }) {
   let gameImg;
 
   switch (nomeJogo) {
     case "Ralph":
-      gameImg = '';
+      gameImg = ralph;
       break;
     case "Jogo da Memória":
       gameImg = memoria;

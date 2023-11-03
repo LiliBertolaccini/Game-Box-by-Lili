@@ -16,48 +16,102 @@
     margin-left: 1vw;
   }
 
-  .games_el_topo_box {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 80vw;
-    align-items: center;
-    top: -2vw;
-  }
+//    .games_el_topo_box {
+//      display: flex;
+//      position: absolute;
+//      justify-content: space-between;
+//      flex-direction: row;
+//      width: 80vw;
+//      align-items: center;
+//      top: -2vw;
 
-  .games_el_moeda {
-    display: flex;
-    flex-direction: row;
-    //position: absolute;
-    align-items: center;
-    margin-left: 2vw;
+    //  .games_el_moeda {
+    //    display: flex;
+    //    flex-direction: row;
+    //    //position: absolute;
+    //    align-items: center;
+    //    margin-left: 2vw;
+    //}
+//}
+
+//.games_moeda {
+//  display: flex;
+//  width: 2vw;
+//}
+
+//.games_coracao {
+//  margin-right: 2vw;
+//  width: 9vw;
+//}
+
+.games_coracao {
+  display: flex;
+  position: absolute;
+  //display: none;
+  right: 2vw;
+  top: 10vw;
+  width: 9vw;
+  z-index: 2;
 }
 
 .games_moeda {
   display: flex;
-  width: 2vw;
+  position: absolute;
+  //display: none;
+  left: 2vw;
+  top: 13vw;
+  width: 3vw;
+  z-index: 2;
 }
 
-.games_coracao {
-  margin-right: 2vw;
-  width: 9vw;
+.games_titulo_box {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-  
-  .games_nuvemTriangulo{
-    display: flex;
-    position: absolute;
-    left: 66vw;
-    top: -1vw;
-    width: 11vw;
-    z-index: 2;
-  }
+.games_titulo {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.games_texto_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.games_tituloBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.games_nuvemTriangulo{
+  display: flex;
+  position: absolute;
+  //display: none;
+  left: 59vw;
+  top: 13vw;
+  width: 9vw;
+  z-index: 2;
+}
 
 .games_nuvemCumprida {
     display: flex;
     position: absolute;
     left: 1vw;
-    top: -4vw;
+    top: 9vw;
     width: 22vw;
     z-index: 2;
 }
@@ -66,38 +120,38 @@
     display: flex;
     position: absolute;
     width: 9vw;
-    top: 31.2vw;
+    top: 40.2vw;
     left: 19vw;
   }
 
   .games_dog {
     display: flex;
     position: absolute;
-    top: 36.9vw;
+    top: 45.9vw;
     right: 16vw;
     width: 3vw;
   }
 
 .games_cogumelo {
-  //display: flex;
-  //position: absolute;
-  ////display: none;
-  //top: 37vw;
-  ////right: 69vw;
-  //left: 5vw;
-  //bottom: 0;
-  //width: 3vw;
   display: flex;
   position: absolute;
-  top: 28.5vw;
-  right: 76vw;
+  //display: none;
+  top: 45.8vw;
+  //right: 69vw;
+  left: 5vw;
+  bottom: 0;
   width: 3vw;
+  //display: flex;
+  //position: absolute;
+  //top: 45.5vw;
+  //right: 76vw;
+  //width: 3vw;
 }
 
   .games_arvoreCheia {
     display: flex;
     position: absolute;
-    top: 28.5vw;
+    top: 37.4vw;
     right: 6vw;
     width: 12vw;
   }

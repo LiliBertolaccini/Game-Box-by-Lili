@@ -25,7 +25,7 @@ export default function GameDetails() {
           alt="moeda de pixel"
           className={style.gameDetails_moeda}
           />
-          <p>1250</p>
+          <p>1575</p>
         </div>
         <img
           src={coracao}

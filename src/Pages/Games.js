@@ -27,18 +27,20 @@ function Games() {
           className={style.games_coracao}
         />
       </div>
+
       <div className={style.games_titulo_box}>
         <div className={style.games_titulo}>
           <h2>Mundo dos Desafios</h2>
-          <img src={tituloG} alt="background do titulo" />
-        </div>
-        <p>
+          <img src={tituloG} alt="background do titulo" className={style.games_tituloBox}/>
+        <p className={style.games_texto_box}>
           Explore um mundo de jogos, desafios e estratégias. Use sua memória
           para superar desafios ou crie melodias envolventes em nosso simulador
           de piano, mostrando sua maestria no universo das cartas.
         </p>
+        </div>
       </div>
       <div className={style.games_lista_de_jogos}></div>
+
       <img
         src={nuvemTriangulo}
         alt="nuvem de pixel"
@@ -51,7 +53,11 @@ function Games() {
         className={style.games_nuvemCumprida}
       />
 
-      <img src={avatar} alt="avatar de pixel" className={style.games_avatar} />
+      <img
+        src={avatar}
+        alt="avatar de pixel"
+        className={style.games_avatar}
+      />
 
       <img
         src={dog}
@@ -71,7 +77,12 @@ function Games() {
         className={style.games_arvoreCheia}
       />
 
-      <img src={terra} alt="chão de pixel" className={style.games_terra} />
+      <img
+        src={terra}
+        alt="chão de pixel"
+        className={style.games_terra}
+      />
+
 
       <Background page="jogo" />
     </div>

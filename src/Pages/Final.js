@@ -26,7 +26,7 @@ export default function Final() {
           alt="moeda de pixel"
           className={style.final_moeda}
           />
-          <p>1250</p>
+          <p>2000</p>
         </div>
         <img
           src={coracao}
@@ -46,7 +46,7 @@ export default function Final() {
       </div>
 
       {/*depois descomentar e continuar no scss*/}
-      {/*<img
+      <img
       src={avatar}
       alt="avatar de pixel"
       className={style.final_avatar}
@@ -70,11 +70,11 @@ export default function Final() {
         className={style.final_nuvemCumprida}
       />
 
-      <img
+      {/*<img
       src={florRosa}
       alt="flor rosa de pixel"
-      className={style.gameDetails_florRosa}
-        />
+      className={style.final_florRosa}
+        />*/}
 
       <img
       src={arvoreCheia}
@@ -92,7 +92,7 @@ export default function Final() {
       src={coelho}
       alt="coelho de pixel"
       className={style.final_coelho}
-        />*/}
+        />
 
       <Background page="final" />
     </div>
