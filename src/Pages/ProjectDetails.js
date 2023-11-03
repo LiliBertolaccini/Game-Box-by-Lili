@@ -8,13 +8,27 @@ import avatar from "../Images/GBL-avatar.webp";
 import terra from "../Images/GBL-terra.webp";
 import florRosa from "../Images/GBL-florRosa.webp";
 import montanha from '../Images/GBL-montanha.webp';
-
-
-
+import coracao from "../Images/GBL-coracao-vida.webp";
+import moeda from "../Images/GBL-moeda.webp";
 
 export default function ProjectDetails() {
   return (
     <section className={style.projectDetails_container}>
+      <div className={style.projectDetails_el_topo_box}>
+        <div className={style.projectDetails_el_moeda}>
+          <img
+          src={moeda}
+          alt="moeda de pixel"
+          className={style.projectDetails_moeda}
+          />
+          <p>1750</p>
+        </div>
+        <img
+          src={coracao}
+          alt="vidas de coração de pixel"
+          className={style.projectDetails_coracao}
+        />
+      </div>
       <div className={style.projectDetails_box}>
         <div className={style.projectDetails_img_box}>
           <img

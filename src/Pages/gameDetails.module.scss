@@ -10,6 +10,18 @@
   align-items: center;
   flex-direction: column;
 
+  
+.gameDetails_el_topo_box {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80vw;
+  align-items: center;
+  top: -2vw;
+}
+  }
+
   .gameDetails_box {
     display: flex;
     position: absolute;
@@ -18,7 +30,7 @@
     top: 30%;
     align-items: center;
 
-    .gameDetails_terra {
+  .gameDetails_terra {
       display: flex;
       position: absolute;
       align-items: center;
@@ -27,14 +39,6 @@
       z-index: 1;
       //bottom: -45.5vw;
     }
-
-    //.gameDetails_moeda {
-    //  display: flex;
-    //  flex-direction: row;
-    //  //position: absolute;
-    //  align-items: center;
-    //  margin-left: 2vw;
-    //}
 
     .gameDetails_avatar {
       display: flex;
@@ -88,4 +92,4 @@
       //comloquei a moeda e desalinhou todo o resto , foi o ultimo
     }
   }
-}
+

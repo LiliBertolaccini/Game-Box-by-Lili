@@ -8,7 +8,9 @@ import terra from "../Images/GBL-terra.webp";
 //import florRosa from "../Images/GBL-florRosa.webp";
 import florPink from "../Images/GBL-florPink.webp";
 import arvoreBola from "../Images/GBL-arvore-bolas.webp";
-//import moeda from "../Images/GBL-moeda.webp";
+import moeda from "../Images/GBL-moeda.webp";
+import coracao from "../Images/GBL-coracao-vida.webp";
+
 import coelho from "../Images/GBL-coelho.webp";
 
 
@@ -16,7 +18,7 @@ import coelho from "../Images/GBL-coelho.webp";
 export default function GameDetails() {
   return (
     <div className={style.gameDetails_container}>
-      <div className={style.gameDetails_box}>
+      
 
       <img
       src={avatar}
@@ -48,13 +50,7 @@ export default function GameDetails() {
       className={style.gameDetails_coelho}
         />
 
-      {/*<img
-      src={moeda}
-      alt="moeda de pixel"
-      className={style.gameDetails_moeda}
-        />*/}
-
-      </div>
+      
       <Background page="jogo" />
     </div>
   );

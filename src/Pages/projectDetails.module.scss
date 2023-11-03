@@ -10,6 +10,29 @@
   align-items: center;
   flex-direction: column;
 
+  p {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .projectDetails_el_topo_box {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    top: -2vw;
+  }
+
+  .projectDetails_el_moeda {
+    display: flex;
+    flex-direction: row;
+    //position: absolute;
+    align-items: center;
+    margin-left: 2vw;
+  }
+
   .projectDetails_box {
     max-width: 65vw;
     width: 100%;
@@ -72,13 +95,13 @@
         width: 30vw;
         z-index: 1;
         line-height: 1.5;
-        border: 2px solid #C238D3;
+        border: 2px solid #c238d3;
         border-radius: 8px;
         padding: 1vw;
       }
 
       a {
-        color: #C238D3;
+        color: #c238d3;
       }
     }
   }
@@ -86,14 +109,8 @@
   .projectDetails_terra {
     display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 81vw;
-    top: 37.2vw;
-    z-index: 1;
-    //left: -0.99vw;
-    right: -1vw;
-    //bottom: -45.5vw;
+    width: 80vw;
+    bottom: 0;
   }
 
   .projectDetails_avatar {
@@ -103,27 +120,34 @@
     // como alterar o posicionamento das imagens, ao inves do left posso usar o right
     top: 31.2vw;
     left: 62.2vw;
+    z-index: 3;
   }
 
-    .projectDetails_florRosa {
-      display: flex;
-      position: absolute;
-      width: 4vw;
-      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
-      top: 36vw;
-      left: 5vw;
-    }
-
-    .projectDetails_montanha {
-      display: flex;
-      position: absolute;
-      width: 9vw;
-      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
-      top: 33vw;
-      left: 70vw;
-    }
-
+  .projectDetails_florRosa {
+    display: flex;
+    position: absolute;
+    width: 4vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 36vw;
+    left: 5vw;
   }
 
+  .projectDetails_montanha {
+    display: flex;
+    position: absolute;
+    width: 9vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 32.5vw;
+    left: 70vw;
+  }
 
+  .projectDetails_moeda {
+    display: flex;
+    width: 2vw;
+  }
 
+  .projectDetails_coracao {
+    margin-right: 2vw;
+    width: 9vw;
+  }
+}

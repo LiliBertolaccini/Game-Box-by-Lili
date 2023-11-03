@@ -18,79 +18,55 @@ import coracao from "../Images/GBL-coracao-vida.webp";
 function Games() {
   return (
     <div className={style.games_container}>
-      <div className={style.games_box}>
-
-        {/*<div>
-          <img
-            src={coracao}
-            alt="vidas de coração de pixel"
-            className={style.games_coracao}
-          />
-        </div>*/}
+      <div className={style.games_el_topo_box}>
+        <div className={style.games_el_moeda}>
+          <img src={moeda} alt="moeda de pixel" className={style.games_moeda} />
+          <p>1355</p>
+        </div>
         <img
-          src={nuvemTriangulo}
-          alt="nuvem de pixel"
-          className={style.games_nuvemTriangulo}
+          src={coracao}
+          alt="vidas de coração de pixel"
+          className={style.games_coracao}
         />
-
-        {/*<img
+      </div>
+      <img
         src={nuvemTriangulo}
         alt="nuvem de pixel"
-        className={style.games_nuvemTriangulo2}
-      />*/}
+        className={style.games_nuvemTriangulo}
+      />
 
-        <img
-          src={nuvemCumprida}
-          alt="nuvem de pixel"
-          className={style.games_nuvemCumprida}
-        />
+      <img
+        src={nuvemCumprida}
+        alt="nuvem de pixel"
+        className={style.games_nuvemCumprida}
+      />
 
-        <img
-          src={avatar}
-          alt="avatar de pixel"
-          className={style.games_avatar}
-        />
+      <img
+        src={avatar}
+        alt="avatar de pixel"
+        className={style.games_avatar}
+      />
 
-        {/*<img
-      src={trofeu}
-      alt="trofeu de pixel"
-      className={style.games_trofeu}
-      />*/}
+      <img
+        src={dog}
+        alt="árvore de grande de pixel"
+        className={style.games_dog}
+      />
 
-        <img
-          src={dog}
-          alt="árvore de grande de pixel"
-          className={style.games_dog}
-        />
+      <img
+        src={cogumelo}
+        alt="cogumelo de pixel"
+        className={style.games_cogumelo}
+      />
 
-        <img
-          src={cogumelo}
-          alt="cogumelo de pixel"
-          className={style.games_cogumelo}
-        />
+      <img
+        src={arvoreCheia}
+        alt="árvore de grande de pixel"
+        className={style.games_arvoreCheia}
+      />
 
-        <img
-          src={arvoreCheia}
-          alt="árvore de grande de pixel"
-          className={style.games_arvoreCheia}
-        />
-          {/*<img
-            src={coracao}
-            alt="vidas de coração de pixel"
-            className={style.games_coracao}
-          />*/}
-        <img
-        src={terra}
-        alt="chão de pixel"
-        className={style.games_terra} />
+      <img src={terra} alt="chão de pixel" className={style.games_terra} />
 
-          {/*<img
-            src={moeda}
-            alt="moeda de pixel"
-            className={style.games_moeda} />
-          <p>3750</p>*/}
-
-      </div>
       <Background page="jogo" />
     </div>
   );
