@@ -18,7 +18,21 @@ import coelho from "../Images/GBL-coelho.webp";
 export default function GameDetails() {
   return (
     <div className={style.gameDetails_container}>
-      
+      <div className={style.gameDetails_el_topo_box}>
+        <div className={style.gameDetails_el_moeda}>
+          <img
+          src={moeda}
+          alt="moeda de pixel"
+          className={style.gameDetails_moeda}
+          />
+          <p>1250</p>
+        </div>
+        <img
+          src={coracao}
+          alt="vidas de coração de pixel"
+          className={style.gameDetails_coracao}
+        />
+      </div>
 
       <img
       src={avatar}

@@ -74,7 +74,7 @@ function Home() {
       <img
         src={nuvemTriangulo}
         alt="nuvem em forma de triângulo de pixel"
-        className={style.home_nuvem}
+        className={style.home_nuvem2}
       />
 
       <Background page="home" />

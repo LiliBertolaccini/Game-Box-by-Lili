@@ -2,13 +2,11 @@ import React from "react";
 import style from "./games.module.scss";
 
 import Background from "../Components/Background";
-
+import tituloG from "../Images/GBL-elemento-titulo-grande.webp";
 import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
 import avatar from "../Images/GBL-avatar.webp";
 import cogumelo from "../Images/GBL-Cogumelo.webp";
-//import coelho from "../Images/GBL-coelho.webp";
-//import trofeu from "../Images/GBL-trofeu.webp";
 import terra from "../Images/GBL-terra.webp";
 import dog from "../Images/GBL-dog.webp";
 import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
@@ -29,6 +27,18 @@ function Games() {
           className={style.games_coracao}
         />
       </div>
+      <div className={style.games_titulo_box}>
+        <div className={style.games_titulo}>
+          <h2>Mundo dos Desafios</h2>
+          <img src={tituloG} alt="background do titulo" />
+        </div>
+        <p>
+          Explore um mundo de jogos, desafios e estratégias. Use sua memória
+          para superar desafios ou crie melodias envolventes em nosso simulador
+          de piano, mostrando sua maestria no universo das cartas.
+        </p>
+      </div>
+      <div className={style.games_lista_de_jogos}></div>
       <img
         src={nuvemTriangulo}
         alt="nuvem de pixel"
@@ -41,11 +51,7 @@ function Games() {
         className={style.games_nuvemCumprida}
       />
 
-      <img
-        src={avatar}
-        alt="avatar de pixel"
-        className={style.games_avatar}
-      />
+      <img src={avatar} alt="avatar de pixel" className={style.games_avatar} />
 
       <img
         src={dog}

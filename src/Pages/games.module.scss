@@ -52,15 +52,6 @@
     width: 11vw;
     z-index: 2;
   }
-  //.games_nuvemTriangulo2 {
-  //  display: flex;
-  //  position: absolute;
-  //  left: 68.5vw;
-  //  top: 2vw;
-  //  width: 11vw;
-  //  z-index: 2;
-  //}
-
 
 .games_nuvemCumprida {
     display: flex;
@@ -76,9 +67,8 @@
     position: absolute;
     width: 9vw;
     top: 31.2vw;
-    left: 25vw;
+    left: 19vw;
   }
-
 
   .games_dog {
     display: flex;
@@ -89,13 +79,18 @@
   }
 
 .games_cogumelo {
+  //display: flex;
+  //position: absolute;
+  ////display: none;
+  //top: 37vw;
+  ////right: 69vw;
+  //left: 5vw;
+  //bottom: 0;
+  //width: 3vw;
   display: flex;
   position: absolute;
-  //display: none;
-  top: 37vw;
-  //right: 69vw;
-  left: 5vw;
-  bottom: 0;
+  top: 28.5vw;
+  right: 76vw;
   width: 3vw;
 }
 
