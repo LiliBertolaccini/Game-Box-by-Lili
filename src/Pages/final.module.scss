@@ -126,25 +126,25 @@
     z-index: 2;
   }
 
-  .final_arvoreCheia {
-    display: flex;
-    position: absolute;
-    //display: none;
-    top: 30vw;
-    right: 9vw;
-    bottom: 0;
-    width: 11vw;
-  }
+  //.final_arvoreCheia {
+  //  display: flex;
+  //  position: absolute;
+  //  //display: none;
+  //  top: 30vw;
+  //  right: 9vw;
+  //  bottom: 0;
+  //  width: 11vw;
+  //}
 
-  .final_coelho {
-    display: flex;
-    position: absolute;
-    //display: none;
-    top: 26.5vw;
-    right: 11.5vw;
-    bottom: 0;
-    width: 5vw;
-  }
+  //.final_coelho {
+  //  display: flex;
+  //  position: absolute;
+  //  //display: none;
+  //  top: 26.5vw;
+  //  right: 11.5vw;
+  //  bottom: 0;
+  //  width: 5vw;
+  //}
 
   .final_cogumelo {
     display: flex;
@@ -154,6 +154,16 @@
     right: 69.5vw;
     bottom: 0;
     width: 4vw;
+  }
+
+  .final_tesouro {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 31vw;
+    right: 12.5vw;
+    bottom: 0;
+    width: 11vw;
   }
 
   //.final_florRosa {
