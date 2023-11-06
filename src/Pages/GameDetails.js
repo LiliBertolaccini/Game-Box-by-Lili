@@ -15,7 +15,7 @@ import coelho from "../Images/GBL-coelho.webp";
 
 
 
-export default function GameDetails() {
+export default function GameDetails({game}) {
   return (
     <div className={style.gameDetails_container}>
       <div className={style.gameDetails_el_topo_box}>

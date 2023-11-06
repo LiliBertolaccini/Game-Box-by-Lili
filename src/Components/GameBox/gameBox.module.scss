@@ -1,0 +1,45 @@
+.gameBox_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5vw;
+
+  .gameBox_caixa {
+    position: relative;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .gameBox_gameImg {
+      width: 9vw;
+      position: absolute;
+    }
+
+    .gameBox_gameImg_background {
+      width: 100%;
+    }
+  }
+
+  .gameBox_titulo_box {
+    width: 13vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-size: 1.2vw;
+      position: absolute;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+
+}
+

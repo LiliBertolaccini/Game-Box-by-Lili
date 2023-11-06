@@ -29,10 +29,10 @@ export default function GameBox({ nomeJogo }) {
   }
 
   return (
-    <div className={style.gameBox_container}>
+    <div className={style.gameBox_container} onClick>
       <div className={style.gameBox_caixa}>
-        <img src={gameImg} alt={`capa do jogo ${nomeJogo}`} />
-        <img src={caixa} alt="background da imagem do jogo" />
+        <img src={gameImg} alt={`capa do jogo ${nomeJogo}`} className={style.gameBox_gameImg} />
+        <img src={caixa} alt="background da imagem do jogo" className={style.gameBox_gameImg_background} />
       </div>
       <div className={style.gameBox_titulo_box}>
         <h3>{nomeJogo}</h3>

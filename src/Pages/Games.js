@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./games.module.scss";
 
 import Background from "../Components/Background";
@@ -12,9 +12,21 @@ import dog from "../Images/GBL-dog.webp";
 import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
+import GameBox from "../Components/GameBox";
+import GameDetails from "./GameDetails";
 
 function Games() {
+
+const [clickedGame, setClickedGame] = useState('lili');
+console.log(clickedGame);
+
+  const handleClick = (jogo) => {
+    setClickedGame(jogo);
+    console.log(clickedGame);
+  };
+
   return (
+    clickedGame === "lili" ? ( 
     <div className={style.games_container}>
       <div className={style.games_el_topo_box}>
         <div className={style.games_el_moeda}>
@@ -31,7 +43,7 @@ function Games() {
       <div className={style.games_titulo_box}>
         <div className={style.games_titulo}>
           <h2>Mundo dos Desafios</h2>
-          <img src={tituloG} alt="background do titulo" className={style.games_tituloBox}/>
+          <img src={tituloG} alt="background do titulo" className={style.games_titulo_backgroud}/>
         <p className={style.games_texto_box}>
           Explore um mundo de jogos, desafios e estratégias. Use sua memória
           para superar desafios ou crie melodias envolventes em nosso simulador
@@ -39,7 +51,20 @@ function Games() {
         </p>
         </div>
       </div>
-      <div className={style.games_lista_de_jogos}></div>
+      <div className={style.games_lista_de_jogos}>
+        <div onMouseDown={() => setClickedGame("Ralph")}>
+        <GameBox nomeJogo="Ralph" />
+        </div>
+        <div onMouseDown={() => handleClick("Jogo da Memória")}>
+        <GameBox nomeJogo="Jogo da Memória" />
+        </div>
+        <div onMouseDown={() => setClickedGame("Piano")}>
+        <GameBox nomeJogo="Piano" />
+        </div>
+        <div onMouseDown={() => setClickedGame("Yu-Gi-Oh!")}>
+        <GameBox nomeJogo="Yu-Gi-Oh!" />
+        </div>
+      </div>
 
       <img
         src={nuvemTriangulo}
@@ -86,6 +111,9 @@ function Games() {
 
       <Background page="jogo" />
     </div>
+    ) : (
+      <GameDetails game={clickedGame}/>
+    )
   );
 }
 
