@@ -7,7 +7,6 @@ import avatar from "../Images/GBL-avatar.webp";
 import terra from "../Images/GBL-terra.webp";
 import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
-//import florRosa from "../Images/GBL-florRosa.webp";
 import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
 import cogumelo from "../Images/GBL-Cogumelo.webp";
 import coelho from "../Images/GBL-coelho.webp";
