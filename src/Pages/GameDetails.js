@@ -38,7 +38,7 @@ export default function GameDetails({game}) {
     case "Piano":
       textGame = textPiano;
       break;
-    case "Yu-Gi-Oh":
+    case "Yu-Gi-Oh!":
       textGame = textYugi;
       break;
     default:
