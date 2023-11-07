@@ -33,62 +33,77 @@
     margin-left: 1vw;
   }
 
-    .gameDetails_terra {
-      display: flex;
-      position: absolute;
-      width: 80vw;
-      bottom: 0;
+  .gameDetails_content_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 65vw;
+    top: 5vw;
+
+    .gameDetails_img_box {
+      width: 40%;
     }
 
-
-    .gameDetails_avatar {
-      display: flex;
-      position: absolute;
-      width: 9vw;
-      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
-      top: 31.4vw;
-      left: 40vw;
+    .gameDetails_details_box {
+      width: 40%;
+      font-family: Share Tech Mono, cursive;;
     }
-
-    .gameDetails_coelho {
-      display: flex;
-      position: absolute;
-      //display: none;
-      top: 37vw;
-      right: 12vw;
-      bottom: 0;
-      width: 3vw;
-    }
-
-    .gameDetails_florPink {
-      display: flex;
-      position: absolute;
-      width: 6vw;
-      // como alterar o posicionamento das imagens, ao inves do left posso usar o right
-      top: 33.9vw;
-      left: 5vw;
-      //right: 10vw;
-    }
-
-    .gameDetails_arvoreBola {
-      display: flex;
-      position: absolute;
-      //display: none;
-      top: 29.3vw;
-      right: 4vw;
-      bottom: 0;
-      width: 11vw;
-    }
-
-    .gameDetails_moeda {
-      display: flex;
-      width: 2vw;
-    }
-
-    .gameDetails_coracao {
-      margin-right: 2vw;
-      width: 9vw;
-    }
-
   }
 
+  .gameDetails_terra {
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    bottom: 0;
+  }
+
+  .gameDetails_avatar {
+    display: flex;
+    position: absolute;
+    width: 9vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 31.4vw;
+    left: 40vw;
+  }
+
+  .gameDetails_coelho {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 37vw;
+    right: 12vw;
+    bottom: 0;
+    width: 3vw;
+  }
+
+  .gameDetails_florPink {
+    display: flex;
+    position: absolute;
+    width: 6vw;
+    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
+    top: 33.9vw;
+    left: 5vw;
+    //right: 10vw;
+  }
+
+  .gameDetails_arvoreBola {
+    display: flex;
+    position: absolute;
+    //display: none;
+    top: 29.3vw;
+    right: 4vw;
+    bottom: 0;
+    width: 11vw;
+  }
+
+  .gameDetails_moeda {
+    display: flex;
+    width: 2vw;
+  }
+
+  .gameDetails_coracao {
+    margin-right: 2vw;
+    width: 9vw;
+  }
+}

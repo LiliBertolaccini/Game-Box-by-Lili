@@ -1,0 +1,32 @@
+.jogo_container {
+  width: 80vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+
+.jogo_terra {
+  display: flex;
+  position: absolute;
+  width: 80vw;
+  bottom: 0;
+}
+
+.jogo_cogumelo {
+  display: flex;
+  position: absolute;
+  top: 36.9vw;
+  right: 74.2vw;
+  width: 3vw;
+}
+
+.jogo.avatar {
+  display: flex;
+  position: absolute;
+  width: 8.6vw;
+  top: 31.5vw;
+  left: 18.3vw;
+}
+
+
+}

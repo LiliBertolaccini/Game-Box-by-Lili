@@ -12,10 +12,38 @@ import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
 
 import coelho from "../Images/GBL-coelho.webp";
+import GameDescription from "../Components/GameDescription";
 
 
 
 export default function GameDetails({game}) {
+  const textRalph = "Em um mundo de fliperamas, Ralph é o vilão dos jogos de arcade. Em seu próprio jogo, você precisa clicar onde quer que ele apareça para capturá-lo, marcando valiosos pontos. Mas, para vencer, é preciso mais do que apenas rapidez e raciocínio ágil. Ralph, o personagem que ninguém espera ser herói, mostrará que, para ganhar, é necessário quebrar barreiras, superar desafios e provar que até mesmo os vilões podem se tornar vencedores."
+
+  const textMemory = "Bem-vindo ao emocionante mundo dos jogos de arcade de pixels! É uma versão única e divertida do clássico jogo da memória, onde você deve combinar pares de imagens idênticas para ganhar pontos. Teste sua memória e concentração enquanto explora uma variedade de imagens incríveis."
+
+  const textPiano = "Desfrute de uma experiência musical única com o Simulador de Piano! Torne-se um pianista virtuoso, explore um teclado e crie músicas incríveis. Deixe sua criatividade fluir e embarque em uma jornada musical única, onde a diversão é a chave e a melodia é o prêmio.Liberte sua criatividade e torne-se o maestro da música neste simulador cativante."
+
+  const textYugi = "Prepare-se para entrar nesse mundo de Yo-Gi-Oh Jokenpô, escolha sua carta e desafie o computador em uma batalha de estratégia. Os pontos se acumulam à medida que você demonstra sua astúcia e habilidades táticas. Mostre sua astúcia, escolha suas técnicas e aprenda com cada batalha. Entre nesse universo de jogos e se divirta! Com a ambientação, cartas e trilha sonora fiéis ao universo do Yugi, prepare-se para duelar e se tornar o mestre deste emocionante jogo inspirado em um clássico."
+
+  let textGame;
+
+  // fazer switch case
+  switch (game) {
+    case "Ralph":
+      textGame = textRalph;
+      break;
+    case "Jogo da Memória":
+      textGame = textMemory;
+      break;
+    case "Piano":
+      textGame = textPiano;
+      break;
+    case "Yu-Gi-Oh":
+      textGame = textYugi;
+      break;
+    default:
+      return null;
+  }
   return (
     <div className={style.gameDetails_container}>
       <div className={style.gameDetails_el_topo_box}>
@@ -33,7 +61,12 @@ export default function GameDetails({game}) {
           className={style.gameDetails_coracao}
         />
       </div>
-
+    <div className={style.gameDetails_content_box}>
+      <div className={style.gameDetails_img_box}></div>
+      <div className={style.gameDetails_details_box}>
+        <GameDescription description={textGame} titulo={game} />
+      </div>
+    </div>
       <img
       src={avatar}
       alt="avatar de pixel"

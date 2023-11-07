@@ -20,11 +20,6 @@ function Games() {
 const [clickedGame, setClickedGame] = useState('lili');
 console.log(clickedGame);
 
-  const handleClick = (jogo) => {
-    setClickedGame(jogo);
-    console.log(clickedGame);
-  };
-
   return (
     clickedGame === "lili" ? ( 
     <div className={style.games_container}>
@@ -55,7 +50,7 @@ console.log(clickedGame);
         <div onMouseDown={() => setClickedGame("Ralph")}>
         <GameBox nomeJogo="Ralph" />
         </div>
-        <div onMouseDown={() => handleClick("Jogo da Memória")}>
+        <div onMouseDown={() => setClickedGame("Jogo da Memória")}>
         <GameBox nomeJogo="Jogo da Memória" />
         </div>
         <div onMouseDown={() => setClickedGame("Piano")}>
