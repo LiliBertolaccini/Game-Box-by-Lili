@@ -7,9 +7,10 @@ import arrow from './Images/GBL-seta.webp';
 import GameDetails from './Pages/GameDetails';
 import ProjectDetails from './Pages/ProjectDetails';
 import Final from './Pages/Final';
+//import Jogo from './Pages/Jogo';
 
 function App() {
-  const [local, setLocal] = useState('games');
+  const [local, setLocal] = useState('final');
   const componentPage = () => {
     switch (local) {
       case 'home':
@@ -20,7 +21,9 @@ function App() {
       return <GameDetails />;
     case 'projectDetails':
       return <ProjectDetails />;
-    case 'final':
+    //case 'jogo':
+      //return <Jogo />;
+      case 'final':
       return <Final />;
     default:
       return null;

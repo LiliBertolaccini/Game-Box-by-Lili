@@ -10,23 +10,50 @@
   position: absolute;
   width: 80vw;
   bottom: 0;
-}
-
-.jogo_cogumelo {
-  display: flex;
-  position: absolute;
   top: 36.9vw;
-  right: 74.2vw;
-  width: 3vw;
 }
 
-.jogo.avatar {
+//.jogo_cogumelo {
+//  display: flex;
+//  position: absolute;
+//  top: 36.9vw;
+//  right: 74.2vw;
+//  width: 3vw;
+//}
+
+.jogo_avatar {
   display: flex;
   position: absolute;
   width: 8.6vw;
   top: 31.5vw;
-  left: 18.3vw;
+  left: 5.3vw;
 }
 
+.jogo_arvoreBola {
+  display: flex;
+  position: absolute;
+  //display: none;
+  top: 29.3vw;
+  right: 4vw;
+  bottom: 0;
+  width: 11vw;
+}
+
+.jogo_dog {
+  display: flex;
+  position: absolute;
+  top: 37.3vw;
+  right: 11vw;
+  width: 2.7vw;
+}
+
+.jogo_nuvemTriangulo {
+  display: flex;
+  position: absolute;
+  //display: none;
+  left: 65vw;
+  top: 7.2vw;
+  width: 9vw;
+}
 
 }
