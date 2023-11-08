@@ -30,12 +30,6 @@ export default function Jogo({game}) {
         className={style.jogo_avatar}
       />
 
-      {/*<img
-        src={cogumelo}
-        alt="cogumelo de pixel"
-        className={style.jogo_cogumelo}
-      />*/}
-
       <img
         src={nuvemTriangulo}
         alt="nuvem de pixel"

@@ -15,7 +15,6 @@
     margin-left: 1vw;
   }
 
-  
   .final_el_topo_box {
     display: flex;
     position: absolute;
@@ -29,7 +28,6 @@
   .final_el_moeda {
     display: flex;
     flex-direction: row;
-    //position: absolute;
     align-items: center;
     margin-left: 2vw;
   }
@@ -109,7 +107,6 @@
   .final_nuvemTriangulo {
     display: flex;
     position: absolute;
-    //display: none;
     left: 60vw;
     top: 3vw;
     width: 9vw;
@@ -119,37 +116,15 @@
   .final_nuvemCumprida {
     display: flex;
     position: absolute;
-    //display: none;
     left: 14vw;
     top: -2vw;
     width: 13vw;
     z-index: 2;
   }
 
-  //.final_arvoreCheia {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  top: 30vw;
-  //  right: 9vw;
-  //  bottom: 0;
-  //  width: 11vw;
-  //}
-
-  //.final_coelho {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  top: 26.5vw;
-  //  right: 11.5vw;
-  //  bottom: 0;
-  //  width: 5vw;
-  //}
-
   .final_cogumelo {
     display: flex;
     position: absolute;
-    //display: none;
     top: 36.2vw;
     right: 69.5vw;
     bottom: 0;
@@ -159,29 +134,9 @@
   .final_tesouro {
     display: flex;
     position: absolute;
-    //display: none;
     top: 30.6vw;
     right: 5vw;
     bottom: 0;
     width: 11vw;
   }
-
-  //.final_florRosa {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  top: 33.2vw;
-  //  right: 60.5vw;
-  //  bottom: 0;
-  //  width: 7vw;
-  //}
-
-  //.final_arvore {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  top: 60vw;
-  //  right: 10vw;
-  //  width: 9vw;
-  //}
 }

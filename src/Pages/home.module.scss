@@ -50,7 +50,6 @@
   .home_el_moeda {
     display: flex;
     flex-direction: row;
-    //position: absolute;
     align-items: center;
     margin-left: 2vw;
   }
@@ -71,7 +70,6 @@
   .home_arvoreBolas {
     display: flex;
     position: absolute;
-    //display: none;
     top: 28.8vw;
     right: 4vw;
     bottom: 0;
@@ -81,7 +79,6 @@
   .home_coelho {
     display: flex;
     position: absolute;
-    //display: none;
     top: 15vw;
     right: 4vw;
     bottom: 0;
@@ -96,7 +93,6 @@
   .home_arvore {
     display: flex;
     position: absolute;
-    //display: none;
     top: 60vw;
     right: 10vw;
     width: 9vw;
@@ -105,7 +101,6 @@
   .home_coelho {
     display: flex;
     position: absolute;
-    //display: none;
     top: 37vw;
     right: 15vw;
     width: 3vw;
@@ -115,7 +110,6 @@
   .home_nuvem {
     display: flex;
     position: absolute;
-    //display: none;
     left: 17vw;
     top: 2vw;
     width: 9vw;
@@ -125,7 +119,6 @@
   .home_nuvemTriangulo {
     display: flex;
     position: absolute;
-    //display: none;
     left: 20vw;
     top: 2vw;
     width: 9vw;
@@ -135,7 +128,6 @@
   .home_nuvem2 {
     display: flex;
     position: absolute;
-    //display: none;
     left: 59vw;
     top: 4vw;
     width: 10vw;

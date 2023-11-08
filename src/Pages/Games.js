@@ -102,8 +102,7 @@ console.log(clickedGame);
         alt="chão de pixel"
         className={style.games_terra}
       />
-
-
+      
       <Background page="jogo" />
     </div>
     ) : (

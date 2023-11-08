@@ -66,11 +66,7 @@ function Home() {
         alt="chão de pixel"
         className={style.home_terra}
         />
-      {/*<img
-        src={arvoreBolas}
-        alt="árvore de bolas de pixel"
-        className={style.home_arvore}
-      />*/}
+
       <img
         src={nuvemTriangulo}
         alt="nuvem em forma de triângulo de pixel"

@@ -27,7 +27,6 @@
     .games_el_moeda {
       display: flex;
       flex-direction: row;
-      //position: absolute;
       align-items: center;
       margin-left: 2vw;
     }
@@ -42,26 +41,6 @@
     margin-right: 2vw;
     width: 9vw;
   }
-
-  //.games_coracao {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  right: 2vw;
-  //  top: 10vw;
-  //  width: 9vw;
-  //  z-index: 2;
-  //}
-
-  //.games_moeda {
-  //  display: flex;
-  //  position: absolute;
-  //  //display: none;
-  //  left: 2vw;
-  //  top: 13vw;
-  //  width: 3vw;
-  //  z-index: 2;
-  //}
 
   .games_titulo_box {
     display: flex;
@@ -112,7 +91,6 @@
   .games_nuvemTriangulo {
     display: flex;
     position: absolute;
-    //display: none;
     left: 65vw;
     top: 7.2vw;
     width: 9vw;
@@ -143,14 +121,6 @@
   }
 
   .games_cogumelo {
-    //display: flex;
-    //position: absolute;
-    ////display: none;
-    //top: 45.8vw;
-    ////right: 69vw;
-    //left: 5vw;
-    //bottom: 0;
-    //width: 3vw;
     display: flex;
     position: absolute;
     top: 36.9vw;
@@ -163,7 +133,6 @@
     position: absolute;
     
     top: 30.7vw;
-    //bottom: 0;
     right: 1.2vw;
     width: 9.5vw;
   }

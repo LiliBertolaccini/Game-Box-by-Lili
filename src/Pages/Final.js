@@ -7,14 +7,12 @@ import avatar from "../Images/GBL-avatar.webp";
 import terra from "../Images/GBL-terra.webp";
 import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
-import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
+//import arvoreCheia from "../Images/GBL-arvore-cheia.webp";
 import cogumelo from "../Images/GBL-Cogumelo.webp";
-import coelho from "../Images/GBL-coelho.webp";
+//import coelho from "../Images/GBL-coelho.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
 import tesouro from "../Images/img_jogo_memoria/GBL-tesouro.webp";
-
-
 
 export default function Final() {
   return (
@@ -45,7 +43,6 @@ export default function Final() {
         </div>
       </div>
 
-      {/*depois descomentar e continuar no scss*/}
       <img
       src={avatar}
       alt="avatar de pixel"
@@ -70,29 +67,11 @@ export default function Final() {
         className={style.final_nuvemCumprida}
       />
 
-      {/*<img
-      src={florRosa}
-      alt="flor rosa de pixel"
-      className={style.final_florRosa}
-        />*/}
-
-      {/*<img
-      src={arvoreCheia}
-      alt="árvore de grande de pixel"
-      className={style.final_arvoreCheia}
-        />*/}
-
       <img
       src={cogumelo}
       alt="cogumelo de pixel"
       className={style.final_cogumelo}
         />
-
-      {/*<img
-      src={coelho}
-      alt="coelho de pixel"
-      className={style.final_coelho}
-        />*/}
 
       <img
       src={tesouro}

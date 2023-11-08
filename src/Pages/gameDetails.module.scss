@@ -73,11 +73,8 @@
           transform: scale(1);
         }
       }
-
     }
   }
-
-
 
   .gameDetails_terra {
     display: flex;
@@ -90,7 +87,6 @@
     display: flex;
     position: absolute;
     width: 9vw;
-    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
     top: 31.4vw;
     left: 44vw;
   }
@@ -98,7 +94,6 @@
   .gameDetails_coelho {
     display: flex;
     position: absolute;
-    //display: none;
     top: 37vw;
     right: 12vw;
     bottom: 0;
@@ -109,16 +104,13 @@
     display: flex;
     position: absolute;
     width: 6vw;
-    // como alterar o posicionamento das imagens, ao inves do left posso usar o right
     top: 33.9vw;
     left: 5vw;
-    //right: 10vw;
   }
 
   .gameDetails_arvoreBola {
     display: flex;
     position: absolute;
-    //display: none;
     top: 29.3vw;
     right: 4vw;
     bottom: 0;

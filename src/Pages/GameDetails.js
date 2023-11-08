@@ -5,7 +5,6 @@ import Background from "../Components/Background";
 
 import avatar from "../Images/GBL-avatar.webp";
 import terra from "../Images/GBL-terra.webp";
-//import florRosa from "../Images/GBL-florRosa.webp";
 import florPink from "../Images/GBL-florPink.webp";
 import arvoreBola from "../Images/GBL-arvore-bolas.webp";
 import moeda from "../Images/GBL-moeda.webp";
@@ -32,7 +31,6 @@ export default function GameDetails({ game }) {
 
   let textGame;
 
-  // fazer switch case
   switch (game) {
     case "Ralph":
       textGame = textRalph;
