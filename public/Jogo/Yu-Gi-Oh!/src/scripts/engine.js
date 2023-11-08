@@ -18,7 +18,6 @@ const state = {
   },
 };
 
-
 playerSides = {
   player1: "player-cards",
   computer: "computer-cards",
