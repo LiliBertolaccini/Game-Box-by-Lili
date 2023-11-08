@@ -15,13 +15,14 @@ const state = {
   },
   actions: {
     button: document.getElementById("next-duel"),
-  },
+  }
 };
 
-playerSides = {
+
+const playerSides = {
   player1: "player-cards",
   computer: "computer-cards",
-};
+}
 
 const pathImages = "./src/assets/icons/";
   const cardData = [
@@ -164,8 +165,6 @@ async function drawSelectedCard(index) {
           document.getElementById(fieldSide).appendChild(cardImage);
         }
       }
-
-
 
 async function resetDuel() {
   state.actions.button.style.display = "block";
