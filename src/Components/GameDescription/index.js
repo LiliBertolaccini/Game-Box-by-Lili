@@ -4,6 +4,7 @@ import style from "./gameDescription.module.scss";
 import tituloG from "../../Images/GBL-elemento-titulo-grande.webp";
 
 export default function GameDescription({description, titulo}) {
+
   return (
     <div className={style.gameDescription_container}>
       <div className={style.gameDescription_titulo_box}>

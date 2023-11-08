@@ -46,10 +46,38 @@
     }
 
     .gameDetails_details_box {
-      width: 40%;
-      font-family: Share Tech Mono, cursive;;
+      width: 60%;
+      font-family: Share Tech Mono, cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .gameDetails_play_button {
+        cursor: pointer;
+        border: 2px solid #c238d3;
+        font-family: "ArcadeClassic";
+        font-size: 1.5vw;
+        padding: 0.8vw 1.5vw;
+        margin-top: 1vw;
+        border-radius: 8px;
+        transition: 0.3s;
+        width: 11vw;
+        text-align: center;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+    
+        &:active {
+          transform: scale(1);
+        }
+      }
+
     }
   }
+
+
 
   .gameDetails_terra {
     display: flex;

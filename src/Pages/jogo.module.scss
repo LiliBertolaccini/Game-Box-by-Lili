@@ -5,6 +5,18 @@
   align-items: center;
   flex-direction: column;
 
+  .jogo_game_box {
+    position: absolute;
+    top: 5vw;
+
+    .jogo_game_iframe {
+      width: 60vw;
+      height: 30vw;
+      border: 2px solid #000;
+    }
+
+  }
+
 .jogo_terra {
   display: flex;
   position: absolute;

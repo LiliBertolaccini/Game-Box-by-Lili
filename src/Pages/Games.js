@@ -50,8 +50,8 @@ console.log(clickedGame);
         <div onMouseDown={() => setClickedGame("Ralph")}>
         <GameBox nomeJogo="Ralph" />
         </div>
-        <div onMouseDown={() => setClickedGame("Jogo da Memória")}>
-        <GameBox nomeJogo="Jogo da Memória" />
+        <div onMouseDown={() => setClickedGame("Desafio dos Pares")}>
+        <GameBox nomeJogo="Desafio dos Pares" />
         </div>
         <div onMouseDown={() => setClickedGame("Piano")}>
         <GameBox nomeJogo="Piano" />

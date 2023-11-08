@@ -7,12 +7,16 @@ import avatar from "../Images/GBL-avatar.webp";
 import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import dog from "../Images/GBL-dog.webp";
 import arvoreBola from "../Images/GBL-arvore-bolas.webp";
+import Background from "../Components/Background";
 
-
-
-export default function Jogo() {
+export default function Jogo({game}) {
   return (
     <div className={style.jogo_container}>
+      <div className={style.jogo_game_box}>
+        <iframe  className={style.jogo_game_iframe} src="/Jogo/Ralph/index.html"
+        title="Ralph"
+        ></iframe>
+      </div>
       
       <img
         src={terra}
@@ -49,6 +53,8 @@ export default function Jogo() {
       alt="árvore de bolas de pixel"
       className={style.jogo_arvoreBola}
     />
+
+    <Background page="jogo"/>
     </div>
   );
 }

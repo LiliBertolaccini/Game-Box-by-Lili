@@ -10,7 +10,7 @@ import Final from './Pages/Final';
 //import Jogo from './Pages/Jogo';
 
 function App() {
-  const [local, setLocal] = useState('final');
+  const [local, setLocal] = useState('games');
   const componentPage = () => {
     switch (local) {
       case 'home':

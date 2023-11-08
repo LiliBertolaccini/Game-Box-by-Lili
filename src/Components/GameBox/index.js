@@ -15,7 +15,7 @@ export default function GameBox({ nomeJogo }) {
     case "Ralph":
       gameImg = ralph;
       break;
-    case "Jogo da Memória":
+    case "Desafio dos Pares":
       gameImg = memoria;
       break;
     case "Piano":
