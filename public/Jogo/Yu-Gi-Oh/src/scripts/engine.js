@@ -114,7 +114,7 @@ async function getRandomCardId() {
       } else if (playerCard.LoseOf.includes(computerCardId)) {
         state.score.computerScore++;
         await playAudio("lose");
-        return "Computer venceu";
+        return "Computador venceu";
       } else {
         return "Empate";
       }
