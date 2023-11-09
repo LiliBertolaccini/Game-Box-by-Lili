@@ -3,14 +3,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #e3f2fd;
+  background-color: #7a828b;
   color: #fff;
+  margin: 1vw;
 }
 
 .container {
-  width: 780px;
+  /*width: 780px;
   border-radius: 20px;
   padding: 35px 40px;
+  background-color: black;*/
+  /*width: calc(100vw - 2vw);*/ // vai calcular 2x o valor de 100
+  width: 96vw;
+  margin: 0 auto;
+  padding: 1vw;
+  border: 0.6vw solid black;
+  border-radius: 1vw;
   background-color: black;
 }
 
@@ -23,6 +31,7 @@ body {
 
 header h2 {
   font-size: 1.6rem;
+  /*font-size: 1.4vw*/
 }
 
 header .column {
@@ -32,7 +41,7 @@ header .column {
 
 header .column span {
   font-weight: 500;
-  margin-right: 15px;
+  margin-right: 0.7vw;
   font-size: 1.19rem;
 }
 
@@ -41,10 +50,10 @@ header .column span {
 }
 
 .keys-check input {
-  width: 60px;
-  height: 30px;
+  width: 3vw;
+  height: 1.5vw;
   appearance: none;
-  border-radius: 30px;
+  border-radius: 1.5vw;
   background-color: #4b4b4b;
   cursor: pointer;
   position: relative;
@@ -52,11 +61,11 @@ header .column span {
 
 .keys-check input::before {
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 1vw;
+  width: 1vw;
   background-color: #8c8c8c;
   top: 50%;
-  left: 0.3rem;
+  left: 0.1vw;
   border-radius: inherit;
   position: absolute;
   transform: translateY(-50%);
@@ -64,14 +73,19 @@ header .column span {
 }
 
 .keys-check input:checked::before {
-  left: 2.1rem;
+  left: 1rem;
   background-color: #fff;
 }
 
 .piano-keys {
   display: flex;
-  margin-top: 40px;
+  margin-top: 2vw;
+  justify-content: space-between;
+  align-itens: center;
+  color: #080808;
 }
+
+
 .piano-keys .key {
   cursor: pointer;
   user-select: none;
@@ -101,10 +115,10 @@ header .column span {
 
 .piano-keys span {
   position: absolute;
-  bottom: 20px;
+  bottom: 1vw;
   width: 100%;
   text-align: center;
-  font-size: 1.13rem;
+  font-size: 1.5vw;
 }
 
 .piano-keys .white.active {

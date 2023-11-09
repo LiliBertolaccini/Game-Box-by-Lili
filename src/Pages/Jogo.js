@@ -8,6 +8,8 @@ import nuvemTriangulo from "../Images/GBL-nuvem-triangulo.webp";
 import dog from "../Images/GBL-dog.webp";
 import arvoreBola from "../Images/GBL-arvore-bolas.webp";
 import Background from "../Components/Background";
+import moeda from "../Images/GBL-moeda.webp";
+import coracao from "../Images/GBL-coracao-vida.webp";
 
 export default function Jogo({ game }) {
 
@@ -32,6 +34,21 @@ export default function Jogo({ game }) {
 
   return (
     <div className={style.jogo_container}>
+      <div className={style.jogo_el_topo_box}>
+        <div className={style.jogo_el_moeda}>
+          <img
+          src={moeda}
+          alt="moeda de pixel"
+          className={style.jogo_moeda}
+          />
+          <p>1355</p>
+        </div>
+        <img
+          src={coracao}
+          alt="vidas de coração de pixel"
+          className={style.jogo_coracao}
+        />
+      </div>
       <div className={style.jogo_game_box}>
         <iframe
           className={style.jogo_game_iframe}

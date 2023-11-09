@@ -5,6 +5,37 @@
   align-items: center;
   flex-direction: column;
 
+  p {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+  }
+
+  .jogo_el_topo_box {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    top: -2vw;
+  }
+
+  .jogo_titulo_box {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    top: 30%;
+    align-items: center;
+  }
+
+  .jogo_el_moeda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2vw;
+  }
+
   .jogo_game_box {
     position: absolute;
     top: 5vw;
@@ -38,7 +69,7 @@
   display: flex;
   position: absolute;
   top: 29.3vw;
-  right: 4vw;
+  right: 2.5vw;
   bottom: 0;
   width: 11vw;
 }
@@ -47,15 +78,25 @@
   display: flex;
   position: absolute;
   top: 37.3vw;
-  right: 11vw;
+  right: 10vw;
   width: 2.7vw;
 }
 
 .jogo_nuvemTriangulo {
   display: flex;
   position: absolute;
-  left: 65vw;
+  left: 69.2vw;
   top: 7.2vw;
+  width: 9vw;
+}
+
+.jogo_moeda {
+  display: flex;
+  width: 2vw;
+}
+
+.jogo_coracao {
+  margin-right: 2vw;
   width: 9vw;
 }
 

@@ -3,7 +3,7 @@ import style from "./gameBox.module.scss";
 
 import tituloP from "../../Images/GBL-elemento-titulo.webp";
 import caixa from "../../Images/GBL-elemento-caixa.webp";
-import memoria from "../../Images/GBL-estrela.webp";
+import memoria from "../../Images/GBL-2estrelas.webp";
 import piano from "../../Images/GBL-teclado.webp";
 import yugi from "../../Images/GBL-yugi.webp";
 import ralph from "../../Images/GBL-ralph.webp";

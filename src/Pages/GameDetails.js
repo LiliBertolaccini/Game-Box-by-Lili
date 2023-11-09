@@ -10,6 +10,8 @@ import florPink from "../Images/GBL-florPink.webp";
 import arvoreBola from "../Images/GBL-arvore-bolas.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
+import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
+
 
 import coelho from "../Images/GBL-coelho.webp";
 import GameDescription from "../Components/GameDescription";
@@ -102,6 +104,12 @@ export default function GameDetails({ game }) {
         src={coelho}
         alt="coelho de pixel"
         className={style.gameDetails_coelho}
+      />
+
+      <img
+        src={nuvemCumprida}
+        alt="nuvem de pixel"
+        className={style.gameDetails_nuvemCumprida}
       />
 
       <Background page="jogo" />
