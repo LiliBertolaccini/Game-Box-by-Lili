@@ -26,7 +26,7 @@
 }
 
 img {
-  width: 4.2vw;
+  width: 4vw;
 }
 
 h2 {
@@ -54,7 +54,7 @@ h2 {
 
 .reset:focus {
   color: #1d1e22;
-  background-color: #262809;
+  background-color: #fff;
 }
 
 .game {
