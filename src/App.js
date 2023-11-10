@@ -6,12 +6,13 @@ import Games from "./Pages/Games";
 import arrow from "./Images/GBL-seta.webp";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Final from "./Pages/Final";
+import arrowLeft from "./Images/GBL-seta-esquerda.webp";
 
 function App() {
   const [local, setLocal] = useState("home");
   const [hasArrow, setHasArrow] = useState(true);
 
-//useEffect(() => {}); 
+  //useEffect(() => {});
 
   const componentPage = () => {
     switch (local) {
@@ -74,16 +75,16 @@ function App() {
         src={arrow}
         alt="arrow"
         className={style.app_arrow}
-        style={local === 'home' ? { visibility: 'hidden' } : {}}
+        style={local === "home" ? { visibility: "hidden" } : {}}
         onClick={handleClickLeft}
       />
 
       {componentPage()}
       {hasArrow && (
         <img
-          src={arrow}
+          src={arrowLeft}
           alt="arrow"
-          className={style.app_arrow}
+          className={style.app_arrowLeft}
           onClick={handleClick}
         />
       )}

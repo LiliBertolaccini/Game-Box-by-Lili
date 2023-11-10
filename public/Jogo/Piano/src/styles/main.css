@@ -1,24 +1,29 @@
-body {
+/*body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #7a828b;
+  background-color: #b2b2b2;
   color: #fff;
   margin: 1vw;
+}*/
+
+body {
+  background-color: #b2b2b2;
+  margin: 0;
 }
 
 .container {
   /*width: 780px;
   border-radius: 20px;
   padding: 35px 40px;
-  background-color: black;*/
+  background-color: black;
   /*width: calc(100vw - 2vw);*/ // vai calcular 2x o valor de 100
   width: 96vw;
-  margin: 0 auto;
-  padding: 1vw;
+  padding: 4vw 2vw;
+  margin: 6vw 2vw;
   border: 0.6vw solid black;
-  border-radius: 1vw;
+  border-radius: 1.2vw;
   background-color: black;
 }
 
@@ -30,7 +35,7 @@ body {
 }
 
 header h2 {
-  font-size: 1.6rem;
+  font-size: 2.4vw;
   /*font-size: 1.4vw*/
 }
 
@@ -83,6 +88,8 @@ header .column span {
   justify-content: space-between;
   align-itens: center;
   color: #080808;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
 }
 
 
@@ -100,7 +107,7 @@ header .column span {
   height: 230px;
   border: 1px solid black;
   border-radius: 8px;
-  background: linear-gradient(#fff 96%, #eee 4%);
+  background: linear-gradient(#fff 96%, #eee 9%);
 }
 
 .piano-keys .black {
@@ -122,7 +129,8 @@ header .column span {
 }
 
 .piano-keys .white.active {
-  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  /*box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);*/
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.5);
   background: linear-gradient(to bottom #fff 0%, #eee 100%);
 }
 

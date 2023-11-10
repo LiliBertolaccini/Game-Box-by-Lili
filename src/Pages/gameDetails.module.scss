@@ -43,6 +43,14 @@
 
     .gameDetails_img_box {
       width: 40%;
+
+      .gameDetails_img_gif {
+        width: 25vw;
+        margin-top: 3vw;
+        margin-left: -3vw;
+        border: 2px solid #c238d3;
+        border-radius: 8px;
+      }
     }
 
     .gameDetails_details_box {

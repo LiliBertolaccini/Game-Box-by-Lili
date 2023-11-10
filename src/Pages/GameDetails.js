@@ -11,7 +11,10 @@ import arvoreBola from "../Images/GBL-arvore-bolas.webp";
 import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
 import nuvemCumprida from "../Images/GBL-nuvem-cumprida.webp";
-
+import ralphGif from "../Images/ralph-gif.gif";
+import desafioParesGif from "../Images/desafio-dos-pares-gif.gif";
+import pianoGif from "../Images/piano-gif.gif";
+import yugiGif from "../Images/yugi-gif.gif";
 
 import coelho from "../Images/GBL-coelho.webp";
 import GameDescription from "../Components/GameDescription";
@@ -33,6 +36,7 @@ export default function GameDetails({ game }) {
     "Prepare-se para entrar no mundo de Yo-Gi-Oh Jokenpô, escolha sua carta e desafie o computador em uma batalha. Mostre sua astúcia, escolha suas técnicas e aprenda com cada batalha. Entre nesse universo de jogos e se divirta! Com a ambientação, cartas e trilha sonora fiéis ao universo do Yugi, prepare-se para duelar e se tornar o mestre deste emocionante jogo inspirado em um clássico.";
 
   let textGame;
+  let imageGame;
 
   switch (game) {
     case "Ralph":
@@ -50,6 +54,24 @@ export default function GameDetails({ game }) {
     default:
       return null;
   }
+
+  switch (game) {
+    case "Ralph":
+      imageGame = ralphGif;
+      break;
+    case "Desafio dos Pares":
+      imageGame = desafioParesGif;
+      break;
+    case "Piano":
+      imageGame = pianoGif;
+      break;
+    case "Yu-Gi-Oh!":
+      imageGame = yugiGif;
+      break;
+    default:
+      return null;
+  }
+
   return playGame === true ? (
     <Jogo game={game} />
   ) : (
@@ -70,10 +92,21 @@ export default function GameDetails({ game }) {
         />
       </div>
       <div className={style.gameDetails_content_box}>
-        <div className={style.gameDetails_img_box}></div>
+        <div className={style.gameDetails_img_box}>
+          <img
+            src={imageGame}
+            alt="gif do jogo"
+            className={style.gameDetails_img_gif}
+          />
+        </div>
         <div className={style.gameDetails_details_box}>
           <GameDescription description={textGame} titulo={game} />
-          <h4 className={style.gameDetails_play_button} onClick={() => setPlayGame(true)}>Play Game</h4>
+          <h4
+            className={style.gameDetails_play_button}
+            onClick={() => setPlayGame(true)}
+          >
+            Play Game
+          </h4>
         </div>
       </div>
       <img
