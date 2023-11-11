@@ -5,7 +5,10 @@
   height: 100vw;
   background-image: url("../images/wall.png");
   border-bottom: 2px solid black;
+}
 
+h2 {
+  font-size: 2.5vw;
 }
 
 .menu {
@@ -20,12 +23,11 @@
 }
 
 .panel {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*border: 1px solid red;*/
 }
 
 .square {
@@ -42,6 +44,11 @@
   /*background-color: red;*/
 }
 
+.player {
+  width: 6vw;
+  height: 6vw;
+}
+
 .menu-lives {
   display: flex;
   align-items: center;
@@ -51,7 +58,7 @@
 /*maneira mais responsiva que dentro do menu time pega o segundo filho*/
 .menu-time h2:nth-child(2),
 .menu-score h2:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 
 /*.second {

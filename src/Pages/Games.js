@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./games.module.scss";
 
 import Background from "../Components/Background";
@@ -14,10 +14,16 @@ import moeda from "../Images/GBL-moeda.webp";
 import coracao from "../Images/GBL-coracao-vida.webp";
 import GameBox from "../Components/GameBox";
 import GameDetails from "./GameDetails";
+//import arrow from "./Images/GBL-seta.webp";
+//import arrowLeft from "./Images/GBL-seta-esquerda.webp";
 
-function Games() {
+
+function Games({pickedGame}) {
 
 const [clickedGame, setClickedGame] = useState('lili');
+useEffect(()=>{
+  pickedGame();
+}, [pickedGame])
 console.log(clickedGame);
 
   return (

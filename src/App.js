@@ -19,7 +19,7 @@ function App() {
       case "home":
         return <Home />;
       case "games":
-        return <Games />;
+        return <Games pickedGame={pickedGame} />;
       case "projectDetails":
         return <ProjectDetails />;
       case "final":
@@ -69,10 +69,15 @@ function App() {
     }
   };
 
+  const pickedGame = () => {
+    const hasClass = document.querySelector(".games_container");
+    return hasClass ? true : false;
+  };
+
   return (
     <main className={style.app_container}>
       <img
-        src={arrow}
+        src={arrowLeft}
         alt="arrow"
         className={style.app_arrow}
         style={local === "home" ? { visibility: "hidden" } : {}}
@@ -82,9 +87,9 @@ function App() {
       {componentPage()}
       {hasArrow && (
         <img
-          src={arrowLeft}
+          src={arrow}
           alt="arrow"
-          className={style.app_arrowLeft}
+          className={style.app_arrow}
           onClick={handleClick}
         />
       )}

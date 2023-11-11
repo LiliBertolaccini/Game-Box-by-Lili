@@ -18,18 +18,7 @@
     }
   }
 
-  .app_arrowLeft {
-    width: 5vw;
-    cursor: pointer;
-    transition: transform 0.3s;
-    transform: scaleX(-1);
-    &:hover {
-      transform: scaleX(-1.2);
-    }
-    &:active {
-      transform: scaleX(-0.8);
-    }
-  }
+
 
   //.app_arrow_left {
   //  width: 5vw;

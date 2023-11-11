@@ -41,31 +41,18 @@ export default function GameDetails({ game }) {
   switch (game) {
     case "Ralph":
       textGame = textRalph;
-      break;
-    case "Desafio dos Pares":
-      textGame = textMemory;
-      break;
-    case "Piano":
-      textGame = textPiano;
-      break;
-    case "Yu-Gi-Oh!":
-      textGame = textYugi;
-      break;
-    default:
-      return null;
-  }
-
-  switch (game) {
-    case "Ralph":
       imageGame = ralphGif;
       break;
     case "Desafio dos Pares":
+      textGame = textMemory;
       imageGame = desafioParesGif;
       break;
     case "Piano":
+      textGame = textPiano;
       imageGame = pianoGif;
       break;
     case "Yu-Gi-Oh!":
+      textGame = textYugi;
       imageGame = yugiGif;
       break;
     default:
