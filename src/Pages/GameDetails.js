@@ -20,7 +20,10 @@ import coelho from "../Images/GBL-coelho.webp";
 import GameDescription from "../Components/GameDescription";
 import Jogo from "./Jogo";
 
-export default function GameDetails({ game }) {
+import arrow from "../Images/GBL-seta.webp";
+import arrowLeft from "../Images/GBL-seta-esquerda.webp";
+
+export default function GameDetails({ game, goBack }) {
   const [playGame, setPlayGame] = useState(false);
 
   const textRalph =
@@ -59,80 +62,98 @@ export default function GameDetails({ game }) {
       return null;
   }
 
+  const handleGameClose = () => {
+    setPlayGame(false);
+  };
+
   return playGame === true ? (
-    <Jogo game={game} />
+    <Jogo game={game} onClose={handleGameClose} />
   ) : (
-    <div className={style.gameDetails_container}>
-      <div className={style.gameDetails_el_topo_box}>
-        <div className={style.gameDetails_el_moeda}>
+    <div className={style.gameDetails_background}>
+      <img
+        src={arrowLeft}
+        alt="arrow"
+        className={style.gameDetails_arrow}
+        onClick={goBack}
+      />
+      <div className={style.gameDetails_container}>
+        <div className={style.gameDetails_el_topo_box}>
+          <div className={style.gameDetails_el_moeda}>
+            <img
+              src={moeda}
+              alt="moeda de pixel"
+              className={style.gameDetails_moeda}
+            />
+            <p>1575</p>
+          </div>
           <img
-            src={moeda}
-            alt="moeda de pixel"
-            className={style.gameDetails_moeda}
+            src={coracao}
+            alt="vidas de coração de pixel"
+            className={style.gameDetails_coracao}
           />
-          <p>1575</p>
+        </div>
+        <div className={style.gameDetails_content_box}>
+          <div className={style.gameDetails_img_box}>
+            <img
+              src={imageGame}
+              alt="gif do jogo"
+              className={style.gameDetails_img_gif}
+            />
+          </div>
+          <div className={style.gameDetails_details_box}>
+            <GameDescription description={textGame} titulo={game} />
+            <h4
+              className={style.gameDetails_play_button}
+              onClick={() => setPlayGame(true)}
+            >
+              Play Game
+            </h4>
+          </div>
         </div>
         <img
-          src={coracao}
-          alt="vidas de coração de pixel"
-          className={style.gameDetails_coracao}
+          src={avatar}
+          alt="avatar de pixel"
+          className={style.gameDetails_avatar}
         />
+
+        <img
+          src={terra}
+          alt="chão de pixel"
+          className={style.gameDetails_terra}
+        />
+
+        <img
+          src={florPink}
+          alt="flor pink de pixel"
+          className={style.gameDetails_florPink}
+        />
+
+        <img
+          src={arvoreBola}
+          alt="arvore de pixel"
+          className={style.gameDetails_arvoreBola}
+        />
+
+        <img
+          src={coelho}
+          alt="coelho de pixel"
+          className={style.gameDetails_coelho}
+        />
+
+        <img
+          src={nuvemCumprida}
+          alt="nuvem de pixel"
+          className={style.gameDetails_nuvemCumprida}
+        />
+
+        <Background page="jogo" />
       </div>
-      <div className={style.gameDetails_content_box}>
-        <div className={style.gameDetails_img_box}>
-          <img
-            src={imageGame}
-            alt="gif do jogo"
-            className={style.gameDetails_img_gif}
-          />
-        </div>
-        <div className={style.gameDetails_details_box}>
-          <GameDescription description={textGame} titulo={game} />
-          <h4
-            className={style.gameDetails_play_button}
-            onClick={() => setPlayGame(true)}
-          >
-            Play Game
-          </h4>
-        </div>
-      </div>
       <img
-        src={avatar}
-        alt="avatar de pixel"
-        className={style.gameDetails_avatar}
+        src={arrow}
+        alt="arrow"
+        className={style.gameDetails_arrow}
+        style={{ visibility: "hidden" }}
       />
-
-      <img
-        src={terra}
-        alt="chão de pixel"
-        className={style.gameDetails_terra}
-      />
-
-      <img
-        src={florPink}
-        alt="flor pink de pixel"
-        className={style.gameDetails_florPink}
-      />
-
-      <img
-        src={arvoreBola}
-        alt="arvore de pixel"
-        className={style.gameDetails_arvoreBola}
-      />
-
-      <img
-        src={coelho}
-        alt="coelho de pixel"
-        className={style.gameDetails_coelho}
-      />
-
-      <img
-        src={nuvemCumprida}
-        alt="nuvem de pixel"
-        className={style.gameDetails_nuvemCumprida}
-      />
-
-      <Background page="jogo" />
     </div>
   );
 }

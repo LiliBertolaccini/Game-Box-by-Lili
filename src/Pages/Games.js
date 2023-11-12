@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import style from "./games.module.scss";
 
 import Background from "../Components/Background";
@@ -17,17 +17,19 @@ import GameDetails from "./GameDetails";
 //import arrow from "./Images/GBL-seta.webp";
 //import arrowLeft from "./Images/GBL-seta-esquerda.webp";
 
+function Games() {
+  const [clickedGame, setClickedGame] = useState("lili");
+  const [playGame, setPlayGame] = useState(false);
 
-function Games({pickedGame}) {
+  const handleGameClose = () => {
+    setPlayGame(false);
+    setClickedGame("lili");
+    console.log("Going back");
+    console.log(clickedGame);
+  };
 
-const [clickedGame, setClickedGame] = useState('lili');
-useEffect(()=>{
-  pickedGame();
-}, [pickedGame])
-console.log(clickedGame);
 
-  return (
-    clickedGame === "lili" ? ( 
+  return clickedGame === "lili" ? (
     <div className={style.games_container}>
       <div className={style.games_el_topo_box}>
         <div className={style.games_el_moeda}>
@@ -44,26 +46,30 @@ console.log(clickedGame);
       <div className={style.games_titulo_box}>
         <div className={style.games_titulo}>
           <h2>Mundo dos Desafios</h2>
-          <img src={tituloG} alt="background do titulo" className={style.games_titulo_backgroud}/>
-        <p className={style.games_texto_box}>
-          Explore um mundo de jogos, desafios e estratégias. Use sua memória
-          para superar desafios ou crie melodias envolventes em nosso simulador
-          de piano, mostrando sua maestria no universo das cartas.
-        </p>
+          <img
+            src={tituloG}
+            alt="background do titulo"
+            className={style.games_titulo_backgroud}
+          />
+          <p className={style.games_texto_box}>
+            Explore um mundo de jogos, desafios e estratégias. Use sua memória
+            para superar desafios ou crie melodias envolventes em nosso
+            simulador de piano, mostrando sua maestria no universo das cartas.
+          </p>
         </div>
       </div>
       <div className={style.games_lista_de_jogos}>
-        <div onMouseDown={() => setClickedGame("Ralph")}>
-        <GameBox nomeJogo="Ralph" />
+        <div onMouseDown={() => { setClickedGame("Ralph"); setPlayGame(true)}}>
+          <GameBox nomeJogo="Ralph" />
         </div>
-        <div onMouseDown={() => setClickedGame("Desafio dos Pares")}>
-        <GameBox nomeJogo="Desafio dos Pares" />
+        <div onMouseDown={() => { setClickedGame("Desafio dos Pares");  setPlayGame(true);}}>
+          <GameBox nomeJogo="Desafio dos Pares" />
         </div>
-        <div onMouseDown={() => setClickedGame("Piano")}>
-        <GameBox nomeJogo="Piano" />
+        <div onMouseDown={() => {setClickedGame("Piano"); setPlayGame(true)}}>
+          <GameBox nomeJogo="Piano" />
         </div>
-        <div onMouseDown={() => setClickedGame("Yu-Gi-Oh!")}>
-        <GameBox nomeJogo="Yu-Gi-Oh!" />
+        <div onMouseDown={() => { setClickedGame("Yu-Gi-Oh!"); setPlayGame(true) }}>
+          <GameBox nomeJogo="Yu-Gi-Oh!" />
         </div>
       </div>
 
@@ -79,11 +85,7 @@ console.log(clickedGame);
         className={style.games_nuvemCumprida}
       />
 
-      <img
-        src={avatar}
-        alt="avatar de pixel"
-        className={style.games_avatar}
-      />
+      <img src={avatar} alt="avatar de pixel" className={style.games_avatar} />
 
       <img
         src={dog}
@@ -103,17 +105,12 @@ console.log(clickedGame);
         className={style.games_arvoreCheia}
       />
 
-      <img
-        src={terra}
-        alt="chão de pixel"
-        className={style.games_terra}
-      />
-      
+      <img src={terra} alt="chão de pixel" className={style.games_terra} />
+
       <Background page="jogo" />
     </div>
-    ) : (
-      <GameDetails game={clickedGame}/>
-    )
+  ) : (
+    playGame && <GameDetails game={clickedGame} goBack={handleGameClose} />
   );
 }
 

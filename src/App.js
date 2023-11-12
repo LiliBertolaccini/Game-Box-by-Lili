@@ -3,23 +3,21 @@ import "./App.css";
 import style from "./app.module.scss";
 import Home from "./Pages/Home";
 import Games from "./Pages/Games";
-import arrow from "./Images/GBL-seta.webp";
 import ProjectDetails from "./Pages/ProjectDetails";
 import Final from "./Pages/Final";
+import arrow from "./Images/GBL-seta.webp";
 import arrowLeft from "./Images/GBL-seta-esquerda.webp";
 
 function App() {
   const [local, setLocal] = useState("home");
   const [hasArrow, setHasArrow] = useState(true);
 
-  //useEffect(() => {});
-
   const componentPage = () => {
     switch (local) {
       case "home":
         return <Home />;
       case "games":
-        return <Games pickedGame={pickedGame} />;
+        return <Games />;
       case "projectDetails":
         return <ProjectDetails />;
       case "final":
@@ -41,7 +39,7 @@ function App() {
         break;
       case "projectDetails":
         setLocal("final");
-        setHasArrow(false);
+        setHasArrow(true);
         break;
       default:
         return null;
@@ -69,11 +67,6 @@ function App() {
     }
   };
 
-  const pickedGame = () => {
-    const hasClass = document.querySelector(".games_container");
-    return hasClass ? true : false;
-  };
-
   return (
     <main className={style.app_container}>
       <img
@@ -90,6 +83,7 @@ function App() {
           src={arrow}
           alt="arrow"
           className={style.app_arrow}
+          style={local === "final" ? { visibility: "hidden" } : {}}
           onClick={handleClick}
         />
       )}

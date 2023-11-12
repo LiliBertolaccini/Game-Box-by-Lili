@@ -1,5 +1,16 @@
+.jogo_background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #020b27;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .jogo_container {
-  width: 80vw;
+  // width: 80vw;
   display: flex;
   position: relative;
   align-items: center;
@@ -44,60 +55,78 @@
       width: 50vw;
       height: 30vw;
       border: 2px solid #000;
-
     }
-
   }
 
-.jogo_terra {
-  display: flex;
-  position: absolute;
-  width: 80vw;
-  bottom: 0;
-  top: 36.9vw;
-}
+  .jogo_close_button {
+    border: 2px solid #c238d3;
+    position: absolute;
+    top: 35vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    padding: 0.7vw 1.3vw;
+    margin-top: 1vw;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
 
-.jogo_avatar {
-  display: flex;
-  position: absolute;
-  width: 8.6vw;
-  top: 31.5vw;
-  left: 5.3vw;
-}
+    &:hover {
+      transform: scale(1.1);
+    }
 
-.jogo_arvoreBola {
-  display: flex;
-  position: absolute;
-  top: 29.3vw;
-  right: 2.5vw;
-  bottom: 0;
-  width: 11vw;
-}
+    &:active {
+      transform: scale(1);
+    }
+  }
 
-.jogo_dog {
-  display: flex;
-  position: absolute;
-  top: 37.3vw;
-  right: 10vw;
-  width: 2.7vw;
-}
+  .jogo_terra {
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    bottom: 0;
+    top: 36.9vw;
+  }
 
-.jogo_nuvemTriangulo {
-  display: flex;
-  position: absolute;
-  left: 69.2vw;
-  top: 7.2vw;
-  width: 9vw;
-}
+  .jogo_avatar {
+    display: flex;
+    position: absolute;
+    width: 8.6vw;
+    top: 31.5vw;
+    left: 5.3vw;
+  }
 
-.jogo_moeda {
-  display: flex;
-  width: 2vw;
-}
+  .jogo_arvoreBola {
+    display: flex;
+    position: absolute;
+    top: 29.3vw;
+    right: 2.5vw;
+    bottom: 0;
+    width: 11vw;
+  }
 
-.jogo_coracao {
-  margin-right: 2vw;
-  width: 9vw;
-}
+  .jogo_dog {
+    display: flex;
+    position: absolute;
+    top: 37.3vw;
+    right: 10vw;
+    width: 2.7vw;
+  }
 
+  .jogo_nuvemTriangulo {
+    display: flex;
+    position: absolute;
+    left: 69.2vw;
+    top: 7.2vw;
+    width: 9vw;
+  }
+
+  .jogo_moeda {
+    display: flex;
+    width: 2vw;
+  }
+
+  .jogo_coracao {
+    margin-right: 2vw;
+    width: 9vw;
+  }
 }

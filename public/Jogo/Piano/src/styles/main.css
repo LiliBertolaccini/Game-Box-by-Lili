@@ -23,10 +23,9 @@ body {
   padding: 35px 40px;
   background-color: black;
   /*width: calc(100vw - 2vw);*/ // vai calcular 2x o valor de 100
-  width: 96vw;
+  width: 8vw;
   padding: 4vw 2vw 2vw 2vw;
   /*margin: 6vw 2vw;*/
-  border: 0.6vw solid black;
   border-radius: 1.2vw;
   background-color: black;
 }
@@ -56,7 +55,7 @@ header .column span {
 
 .volume-slider input {
   accent-color: #fff;
-  width: 30vw;
+  width: 25vw;
 }
 
 .keys-check input {
@@ -107,16 +106,16 @@ header .column span {
 }
 
 .piano-keys .white {
-  width: 11vw;
-  height: 38vw;
+  width: 8vw;
+  height: 35vw;
   border: 1px solid black;
   border-radius: 8px;
   background: linear-gradient(#fff 96%, #eee 9%);
 }
 
 .piano-keys .black {
-  width: 8vw;
-  height: 28vw;
+  width: 6vw;
+  height: 26vw;
   z-index: 2;
   margin: 0 -22px 0 -22px;
   border: 1px solid black;

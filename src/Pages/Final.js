@@ -17,6 +17,7 @@ import tesouro from "../Images/img_jogo_memoria/GBL-tesouro.webp";
 export default function Final() {
   return (
     <div className={style.final_container}>
+
             <div className={style.final_el_topo_box}>
         <div className={style.final_el_moeda}>
           <img
@@ -33,7 +34,6 @@ export default function Final() {
         />
       </div>
       <div className={style.final_box}>
-
         <h2>Te aguardo</h2>
         <h2>em outra aventura!</h2>
         <h3>Você pode me encontrar em: </h3>
@@ -41,6 +41,7 @@ export default function Final() {
         <a href="https://www.linkedin.com/in/lilian-barros-bertolaccini/" target="_blank" rel="noreferrer" >Linkedin</a>
         <a href="https://github.com/LiliBertolaccini" target="_blank" rel="noreferrer" >Github</a>
         </div>
+      <h4 className={style.final_play_button} onClick={()=>window.location.reload()}>Play Again</h4>
       </div>
 
       <img
