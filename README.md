@@ -7,7 +7,7 @@ Criei um ambiente inspirado nos jogos antigos, com visual pixel com navegação 
 
 
 <!--gif do site-->
-## <img src="src/Images/video-aprentacao-vel2.gif" alt="apresentação do site" width="750px">
+## <img src="./src/Images/video-aprentacao-vel2.gif" alt="apresentação do site" width="750px">
 
 - [Game Box by Lili](https://game-box-by-lili.vercel.app/)
 
@@ -16,6 +16,7 @@ Criei um ambiente inspirado nos jogos antigos, com visual pixel com navegação 
 
 - ### <img src="src/Images/GBL-ralph.webp" alt="Ralph - O Caçador de Vilões" width="20px"> **Ralph - O Caçador de Vilões:**
   Um clássico de arcade onde você precisa capturar o vilão clicando nele. Uma experiência nostálgica para os amantes de jogos clássicos. 
+
   <img src="src/Images/ralph-gif.gif" alt="Ralph - O Caçador de Vilões" width="200px">
 
 - ### <img src="src/Images/GBL-2estrelas.webp" alt="Desafio dos Pares" width="20px"> **Desafio dos Pares:**
