@@ -7,8 +7,8 @@ Criei um ambiente inspirado nos jogos antigos, com visual pixel com navegação 
 
 
 <!--gif do site-->
-## <img src="./src/Images/video-aprentacao-vel2.gif" alt="apresentação do site" width="750px">
-
+<!--## <img src="src/Images/video-aprentacao-vel2.gif" alt="apresentação do site" width="750px">-->
+![apresentação do site](src/Images/video-aprentacao-vel2.gif)
 - [Game Box by Lili](https://game-box-by-lili.vercel.app/)
 
 ## <img src="src/Images/GBL-moeda.webp" alt="coração" width="20px"> Jogos:
